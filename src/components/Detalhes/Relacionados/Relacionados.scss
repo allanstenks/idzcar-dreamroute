@@ -1,0 +1,312 @@
+// Destaques
+
+.Relacionados{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0 100px;
+    .sliderDestaques{
+        padding:  0;
+    }
+    .SliderControl{
+        position: relative;
+        
+        a.nextSlider {
+            border: 1px solid #D0D0D0;
+            width: 52px;
+            height: 52px;
+            z-index: 1;
+            background: #FFF;
+            position: absolute;
+            right: 61px;
+            bottom: -50px;
+            color: #D0D0D0;
+            text-align: center;
+            line-height: 48px;
+            transition: all ease-in 0.2s;
+            font-size: 12px;
+            &:hover{
+                background: #F5F5F5;
+                cursor: pointer;
+            }
+        }
+        a.prevSlider {
+            border: 1px solid #D0D0D0;
+            width: 52px;
+            height: 52px;
+            z-index: 1;
+            background: #FFF;
+            position: absolute;
+            right: 10px;
+            bottom: -50px;
+            color: #D0D0D0;
+            text-align: center;
+            line-height: 48px;
+            transition: all ease-in 0.2s;
+            font-size: 12px;
+            &:hover{
+                background: #F5F5F5;
+                cursor: pointer;
+            }
+            
+        }
+    }
+    .slick-arrow{
+        display: none !important;
+    }
+    .slick-slider{
+        .slick-slide{
+            padding: 10px;
+        }
+    }
+    
+    .itemVeiculos{
+        border: 1px solid #D8D8D8;
+        margin-bottom: 30px;
+        border-radius: 6px;
+        .foto{
+            height: 280px;
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: url(../../Busca/ResultadoBusca/img/bgCarros.png) no-repeat center / cover;
+                z-index: -1;
+                border-radius: 6px;
+            }
+            span{
+                background: rgb(48,189,68);
+                background: linear-gradient(90deg, rgba(48, 189, 68, 0.55) -17.83%, rgba(29, 29, 29, 0.90) 130.07%);
+                border: 1px solid var(--tertiaryColor);
+                color: var(--whiteColor);
+                font-weight: 600;
+                top: 20px;
+                left: 20px;
+                border-radius: 6px;
+                position: absolute;
+                padding: 4px 20px;
+                text-transform: uppercase;
+                font-size: 13px;
+                letter-spacing: 1px;
+            }
+            span.baixo{
+                background: linear-gradient(90deg, #6C6C6C 50%, #d9d9d970  100%);
+                color: var(--whiteColor);
+                font-weight: 600;
+                top: 0;
+                left: 0;
+                border-radius: 8px 0 0 0;
+                position: absolute;
+                padding: 4px 20px;
+                text-transform: uppercase;
+                font-size: 13px;
+                letter-spacing: 1px;
+                border: none;
+            }
+        }
+        .desc{
+            position: relative;
+            padding: 30px;
+            span.Vendido{
+                border: 0.845px #2CBC46;
+                background: rgba(48, 189, 68, 1); 
+                color: #FFF;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 900;
+                letter-spacing: 0.71px;
+                line-height: 24px;
+                text-transform: uppercase;
+                padding: 8px 30px;
+                display: inline-block;
+                margin: 14px 0;
+                height: 36px;
+                position: absolute;
+                top: -40px;
+                left: -10px;
+                .icons{
+                    font-size: 20px;
+                    position: relative;
+                    top: -2px;
+                }
+                &::before{
+                    content: "";
+                    width: 0; 
+                    height: 0; 
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    border-bottom: 9px solid rgba(48, 189, 68, 1);
+                    position: absolute;
+                    bottom: -7px;
+                    left: 0.5px;
+                    transform: rotate(50deg);
+                }
+            }
+            h6{
+                color: var(--tertiaryColor);
+                font-size: 11px;
+                text-transform: uppercase;
+            }
+            h3{
+                color: var(--primaryColor);
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            h4{
+                color: var(--secondaryColor);
+                font-size: 13px;
+                text-transform: uppercase;
+                padding-bottom: 10px;
+            }
+            span{
+                color: var(--secondaryColor);
+                font-size: 13px;
+                text-transform: uppercase;
+                height: 20px;
+            }
+            h5{
+                color: var(--primaryColor);
+                font-size: 13px;
+                text-transform: uppercase;
+                border-bottom: 1px solid #E5E4E4;
+                padding-bottom: 0;
+                height: 20px;
+                &.noneBorder{
+                    border: none;
+                }
+            }
+            .acao{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 20px;
+                .valor{
+                    
+                    h2{
+                        color: var(--primaryColor);
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                }
+                .btn{
+                    line-height: 28px !important;
+                    padding: 8px 16px 8px 20px !important;
+                    height: 45px;
+                    margin-top: 13px;
+                    svg{
+                        transform: rotate(45deg);
+                        font-size: 24px;
+                        color: #B8A558;
+                    }
+                }
+            }
+        }
+
+    }
+    .headerAction{
+        text-align: right;
+        padding-top: 60px;
+    }
+    &.blindados{
+        background: rgb(36,36,36);
+        background: linear-gradient(90deg, rgba(36,36,36,1) 0%, rgba(47,47,47,1) 100%);
+        &::before{
+            content: "blindados";
+            top: 320px !important;
+            background: linear-gradient(90deg, rgba(217,217,217,0.20) 0%, rgba(217,217,217,0.05) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .titilos{
+            span{
+               color: var(--whiteColor); 
+            }
+        }
+        .headerAction{
+            .btn-primary{
+                background: var(--secondaryTextColor);
+                &:hover{
+                    background: var(--tertiaryColor);
+                }
+            }
+        }
+        .SliderControl{
+            position: relative;
+            
+            a.nextSlider {
+                border: 1px solid #D0D0D0;
+                background: #35363A;
+                &:hover{
+                    background: #F5F5F5;
+                    cursor: pointer;
+                }
+            }
+            a.prevSlider {
+                border: 1px solid #D0D0D0;
+                background: #35363A;
+                &:hover{
+                    background: #F5F5F5;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+ 
+
+@media (max-width: 768px) {
+    .Relacionados{
+        &.blindados{
+            background: rgba(36, 36, 36, 1);
+        }
+        &::before {
+            display: none;
+        }
+        .headerAction {
+            text-align: center;
+            padding-top: 30px;
+        }
+        .sliderDestaques {
+            padding: 20px 60px 0 10px;
+            width: 100%;
+            .slick-list{
+                overflow: inherit;
+                
+            }
+        }
+        .container{
+            > .row{
+                > div:nth-child(2){
+                    order: 3;
+                }
+            }
+        }
+        .SliderControl {
+            display: none;
+        }
+        .itemVeiculos {
+            height: 300px;
+            .desc {
+                .modelo {
+                    padding: 10px 20px;
+                    h3 {
+                        font-size: 16px;
+                    }
+                }
+            }
+            .foto {
+                height: 300px;
+                background-size: cover !important;
+                span{
+                    left: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+// Não Encontrol
+
+.Transforme{
+    padding: 160px 0;
+    margin-top: 40px;
+    background: url(./img/bgTranforme2.png) no-repeat top left;
+    .boxTransforme{
+        background: url(./img/bgTransforme.png) no-repeat center / cover;
+        width: 100%;
+        height: 400px;
+        display: inline-block;
+        margin: auto;
+        border-radius: 8px 0 8px 8px;
+        padding: 90px 0;
+        position: relative;
+        &::before{
+            content: "";
+            width: 772px;
+            height: 69px;
+            background: url(./img/efeitoTranforme.png) no-repeat top right;
+            position: absolute;
+            top: -69px;
+            right: 0;
+        }
+        h3{
+            font-size: 18px;
+            color: var(--tertiaryColor);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 30px;
+            color: var(--whiteColor);
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        p{
+            color: #FFF;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.78px; 
+        }
+        .btn{
+            width: 80%;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .Transforme {
+        overflow: hidden;
+        padding: 76px 0;
+        margin-top: 0;
+        background: none;
+        text-align: center;
+        .boxTransforme{
+            height: auto;
+            padding: 60px 20px;
+            h2{
+                font-size: 28px;
+            }
+            &::before {
+                content: "";
+                width: 100%;
+                height: 34px;
+                position: absolute;
+                top: -34px;
+                right: 0;
+                background-size: 380px;
+            }
+        }
+    }
+}
+
+
+

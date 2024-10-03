@@ -1,0 +1,304 @@
+// PPF
+.PPF1021{
+    padding: 120px 0 60px;
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(181deg, #242424 0.53%, #242424 0.54%, #242424 3%, #2F2F2F 99.47%);
+    .boxPPF1021{
+        min-height: 600px;
+        display: table;
+        position: relative;
+        .textPPF1021{
+            display: table-cell;
+            vertical-align: middle;
+            min-height: 600px;
+            position: relative;
+            img{
+                margin-bottom: 20px;
+            }
+            h2{
+                color: var(--whiteColor);
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 34px;
+                letter-spacing: 1.8px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                width: 80%;
+                strong{
+                    color: #ABABAB;
+                    font-weight: 600;
+                }
+            }
+            p{
+                color: #8F8A8A;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 142.3%; /* 18.499px */
+                letter-spacing: 0.78px;
+                margin-bottom: 40px;
+            }
+            h3{
+                color: #ABABAB;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            h4{
+                color: #ABABAB;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.78px;
+                text-transform: uppercase;    
+                margin-bottom: 0;  
+            }
+        }
+    }
+    .imgPPF1021{
+        position: relative;
+        z-index: 1;
+        &::before{
+            content: "";
+            width: 200%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url(./img/bg-PPF.webp) no-repeat center right 100px;
+            z-index: -1;
+        }
+        img{
+            width: 90%;
+            float: left;
+            margin-top: 120px;
+        }
+    }
+}
+.PPF{
+    padding: 120px 0 60px;
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(181deg, #242424 0.53%, #242424 0.54%, #242424 3%, #2F2F2F 99.47%);
+    min-height: 600px;
+    .boxPPF{
+        min-height: 600px;
+        display: table;
+        position: relative;
+        .textPPF{
+            display: table-cell;
+            vertical-align: middle;
+            min-height: 600px;
+            position: relative;
+            img{
+                margin-bottom: 20px;
+            }
+            h2{
+                color: var(--whiteColor);
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 34px;
+                letter-spacing: 1.8px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                width: 90%;
+                strong{
+                    color: #ABABAB;
+                    font-weight: 600;
+                }
+            }
+            p{
+                color: #8F8A8A;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 142.3%; /* 18.499px */
+                letter-spacing: 0.78px;
+                margin-bottom: 40px;
+            }
+            h3{
+                color: #E91D8F;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            h4{
+                color: #ABABAB;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.78px;
+                text-transform: uppercase;    
+                margin-bottom: 0;  
+            }
+        }
+    }
+    .imgPPF{
+        position: relative;
+        img{
+            width: 90%;
+            float: left;
+            margin-top: 0px;
+        }
+    }
+    .filtrosMarcas{
+        text-align: center;
+        padding-bottom: 100px;
+        button{
+            border-radius: 5px;
+            border: 1px solid #D0D0D0 !important;
+            margin: 0 20px;
+            min-width: 380px;
+            background: none;
+            &:hover{
+                &:not(.btn-profilm){
+                    background: #E91D8F !important;
+                    border: 1px solid #E91D8F !important;
+                }
+                &.btn-profilm{
+                    background: #00AF62;
+                    border: 1px solid #00AF62 !important;
+                }
+            }
+            &.active{
+                &:not(.btn-profilm){
+                    background: #E91D8F !important;
+                    border: 1px solid #E91D8F !important;
+                }
+                &.btn-profilm{
+                    background: #00AF62;
+                    border: 1px solid #00AF62 !important;
+                }
+            }
+            
+        }
+    }
+    .BoxProfilm{
+        .imgPPF{
+            img{
+                margin-top: 60px;
+            }
+        }
+
+    }
+}
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .PPF{
+        padding: 120px 20px 40px;
+        .imgPPF {
+            img {
+                width: 100%;
+            }
+        }
+        .boxPPF {
+            .textPPF {
+                h2 {
+                    font-size: 20px;
+                    width: 100%;
+                    
+                }
+                p{
+                    margin-bottom: 0;
+                }
+                img{
+                    margin-top: 60px;
+                }
+            }
+        }
+        .GaleriaProfilm{
+            padding: 60px 0;
+            > div{
+                padding: 0;
+                > div{
+                    padding: 0;
+                    > div{
+                        padding: 0;
+                    }
+                }
+            }
+            .controlSlider {
+                a.nextSlider {
+                    right: 10px;
+                }
+                a.prevSlider {
+                    right: 60px;
+                }
+            }
+        }
+        .GaleriaCeramicPro{
+            padding: 60px 0;
+            > div{
+                padding: 0;
+                > div{
+                    padding: 0;
+                    > div{
+                        padding: 0;
+                    }
+                }
+            }
+            .controlSlider {
+                a.nextSlider {
+                    right: 10px;
+                }
+                a.prevSlider {
+                    right: 60px;
+                }
+            }
+        }
+        .filtrosMarcas {
+            button {
+                width: 48%;
+                min-width: inherit;
+                margin: 0 1%;
+                margin-bottom: 10px;
+                text-align: center;
+                padding: 30px 0 !important;
+            }
+        }
+    }
+    .PPF1021{
+        padding: 120px 20px 60px;
+        .boxPPF1021 {
+            .textPPF1021 {
+                h2 {
+                    width: 100%;
+                    margin-top: 60px;
+                }
+                h3 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+    }
+}

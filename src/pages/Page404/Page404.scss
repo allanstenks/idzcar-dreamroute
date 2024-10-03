@@ -1,0 +1,35 @@
+// Page404
+
+.Page404{
+    text-align: center;
+    padding: 180px 0 80px;
+    background: var(--whiteColor);
+    min-height: 700px;
+    h3{
+        color: var(--secondaryColor);
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 112.3%;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+    h4 {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #B5B5B5;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 42px;
+        color: transparent;
+        line-height: 40px;
+    }
+    p{
+        color: #272727;
+        text-align: center;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 1.14px;
+    }
+}

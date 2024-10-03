@@ -1,0 +1,101 @@
+// Numeros
+
+.BannerBlindagem{
+    height: 680px;
+    background: #262626;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    .row{
+        position: relative;
+        height: 600px;
+    }
+    .imgBannerBlindagem {
+        height: 600px;
+        position: relative;
+        z-index: 2;
+    }
+}
+.NumerosBlindagem{
+    padding: 80px 0;
+    background: #D0D0D0;
+    text-align: center;
+    margin-top: -180px;
+    z-index: 1;
+    position: relative;
+    span{
+        color: #ABABAB;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 0.66px;
+        text-transform: uppercase;
+        width: 100%;
+        display: inline-block;
+    }
+    h4{
+        color: #272727;
+        text-align: center;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 1.02px;
+        text-transform: uppercase;
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .row{
+        > div{
+            border-right: 1px solid #ABABAB;
+            &:last-child{
+                border-right: 0;
+            }
+        }
+    }
+}
+
+
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .BannerBlindagem {
+        height: 425px;
+        .imgBannerBlindagem {
+            height: 200px;
+            position: relative;
+            z-index: 2;
+            background-size: contain  !important;
+            margin-top: 40px;
+        }
+    }
+    .NumerosBlindagem{
+        padding: 80px 0 40px 0;
+        .container{
+            .row{
+                > div{
+                    margin-bottom: 20px;
+                }
+                span{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+

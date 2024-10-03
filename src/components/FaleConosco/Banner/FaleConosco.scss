@@ -1,0 +1,88 @@
+// FaleConosco
+
+.FaleConosco{
+    background: url(./img/bg-faleconosco.webp) no-repeat center / cover;
+    height: 360px;
+    padding-top: 50px;
+    .boxFaleConosco{
+        min-height: 360px;
+        display: table;
+        position: relative;
+        .textFaleConosco{
+            display: table-cell;
+            vertical-align: middle;
+            min-height: 400px;
+            position: relative;
+            text-align: center;
+            h3{
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: var(--whiteColor);
+                font-weight: 900;
+                text-transform: uppercase;
+                font-size: 34px;
+                color: transparent;
+                line-height: 40px;
+            }
+            h2{
+                font-size: 42px;
+                font-weight: 900;
+                color: var(--whiteColor);
+                text-transform: uppercase;
+                line-height: 40px;
+            }
+            p{
+                color: #F3F3F3;
+                text-align: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: 1.08px;
+                width: 70%;
+                margin: auto;
+            }
+        }
+    }
+
+
+}
+
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .FaleConosco{
+        background: linear-gradient(90deg, #2F2F2F -6.87%, #2F2F2F 107.94%);
+        .boxFaleConosco {
+            .textFaleConosco{
+                h3 {
+                    color: #FFF;
+                    font-size: 27px;
+                    display: inline-block;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 0.72px;
+                    text-transform: uppercase;
+                    -webkit-text-stroke-width: 0;
+                    margin-right: 10px;
+                }
+                h2 {
+                    font-size: 27px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+

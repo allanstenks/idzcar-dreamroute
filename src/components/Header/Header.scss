@@ -1,0 +1,341 @@
+// Header
+
+header{
+    padding: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, #000 0%, #333 100%);
+    margin-bottom: -120px;
+    z-index: 10;
+    height: 120px;
+    position: relative;
+    &.light{
+      background: #FFFFFF;      
+      margin-bottom: 0;
+      nav{
+        .navbar-nav{
+          a{
+            color: var(--secondaryColor);
+          }
+        }
+      }
+      a.btnBusca {
+        border: 1px solid var(--primaryTextColor);
+        background: none;
+        color: var(--primaryTextColor) !important;
+        &:hover{
+          background: var(--primaryTextColor);
+          color: var(--whiteColor) !important;
+          border-color: var(--primaryTextColor) !important;
+          &::before{
+            border-color: var(--primaryTextColor) !important;
+          }
+        }
+      }
+    }
+    nav{
+      background: none !important;
+      .logo{
+        width: 130px;
+        position: relative;
+        top: 0px;
+      }
+      .navbar-nav{
+        a{
+          color: var(--whiteColor);
+          text-decoration: none;
+          padding: 0 14px;
+          font-size: 16px;
+          &:hover{
+            color: var(--tertiaryColor);
+          }
+          
+        }
+        
+        .icons {
+          color: var(--tertiaryColor);
+          font-size: 20px;
+        }
+      }
+    }
+    .btnsMobile{
+      display: none;
+    }
+    .listVeiculos{
+      display: none;
+    }
+    a.btnBusca {
+      border: 1px solid var(--whiteColor);
+      border-radius: 60px;
+      padding: 8px 10px !important;
+      color: var(--whiteColor) !important;
+      margin-right: 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 14px;
+      position: relative;
+      transition: all ease-in-out 0.2s;
+      margin-left: 20px;
+      background: var(--primaryTextColor);
+      svg{
+        position: relative;
+        top: -2px;
+        margin-left: 0;
+        font-size: 16px;
+        
+      }
+      &:hover{
+        background: var(--tertiaryColor);
+        color: var(--whiteColor) !important;
+        border-color: var(--tertiaryColor) !important;
+        &::before{
+          border-color: var(--tertiaryColor) !important;
+        }
+      }
+    }
+  }
+
+  @media(min-width: 1621px) and (max-width: 1800px) {
+    
+  }
+  @media(min-width: 1024px) and (max-width: 1620px) {
+   
+  
+  }
+  @media(min-width: 1024px) and (max-width: 1280px) {
+  
+  }
+  @media (max-width: 768px) {
+    header{
+      padding: 20px;
+      height: 100px;
+      .btnsMobile{
+        display: block;
+        a{
+          color: #FFF;
+          border: none;
+          background: none;
+          font-size: 26px;
+          position: relative;
+          top: -4px;
+          margin-left: 20px;
+        }
+      }
+      .btnFalecConosco{
+        display: none;
+      }
+      .navbar-brand{
+        img{
+          width: 100px;
+        }
+      }
+      &.light{
+        background: linear-gradient(180deg, #FFF 28.18%, #EEE 178.01%);
+        .btnsMobile{
+          a{
+            color: #000;
+          }
+        }
+      }
+      .listVeiculos{
+        display: inline-block;
+        padding: 20px 20px 20px;
+        width: 100%;
+        list-style: none;
+        h3{
+          color: rgba(47, 47, 47, 0.33);
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+          text-transform: uppercase;
+          position: absolute;
+          left: 40px;
+        }
+        .itemNossosVeiculos{
+            max-width: 320px;
+            margin-bottom: 40px;
+            margin: 0 auto 5px;
+            position: relative;
+            .foto{
+                width: 160px;
+                height: 60px;
+                display: inline-block;
+                text-align: center;
+                float: right;
+                margin-bottom: -10px;
+                img{
+                    position: relative;
+                    z-index: 1;
+                    width: 95%;
+                }
+            }
+            .desc{
+                border-radius: 3.737px;
+                border: 1px solid #D7D7D7;
+                background: #EEE;
+                margin-top: -80px;
+                display: inline-block;
+                width: 100%;
+                padding: 20px 10px 10px 20px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                transition: all ease-in 0.2s;
+                .servico{
+                    .textServico{
+                        h6{
+                            color: var(--secondaryColor);
+                            text-transform: uppercase;
+                            font-size: 12px;
+                            transition: all ease-in 0.2s;
+                            text-align: left;
+                            margin-top: 10px;
+                            margin-bottom: 2px;
+                        }
+                        h5{
+                            color: var(--primaryTextColor);
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            transition: all ease-in 0.2s;
+                            text-align: left;
+                        }
+                        
+                    }
+                }
+                .btn-plus {
+                    width: 38px;
+                    height: 38px;
+                    font-size: 15px;
+                    line-height: 36px;
+                    margin-top: 10px;
+                    transition: all ease-in 0.2s;
+                    background: var(--primaryTextColor);
+                    border: none !important;
+                    color: var(--whiteColor);
+                }
+            }
+        }
+      }
+      .collapse {
+        width: 100%;
+        height: 100%;
+        background: #FFF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0;
+        text-align: center;
+        &::before {
+          content: "Menu";
+          text-transform: uppercase;
+          background: linear-gradient(90deg, rgba(217, 217, 217, 0.6) 0%, rgba(217, 217, 217, 0.3) 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          font-size: 51px;
+          position: absolute;
+          right: -22px;
+          top: 119px;
+          font-weight: 900;
+          transform: rotate(270deg);
+          opacity: 0.4;
+        }
+        .navbar-nav {
+          padding: 65px 60px 20px;
+          background: var(--primaryTextColor) url(./img/bgMenuMobile.png) no-repeat center -1px / cover;
+          height: 250px;
+          width: 100%;
+          text-align: left;
+          li{
+            padding-bottom: 10px;
+            a {
+              color: #FFF;
+              font-size: 16px;
+            }
+          }
+        }
+        a.closeMenu {
+          position: absolute;
+          top: 27px;
+          right: 32px;
+          color: #FFF;
+          font-size: 26px;
+      }
+      }
+    } 
+
+  }
+  @media(min-width: 1621px) and (max-width: 1800px) {
+    
+  }
+  @media(min-width: 1024px) and (max-width: 1620px) {
+   
+  
+  }
+  @media(min-width: 1024px) and (max-width: 1380px) {
+    header{
+      height: 100px !important;
+      img.logo {
+        width: 100px;
+      } 
+      nav {
+        .navbar-nav {
+          a {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+
+  }
+
+  @media (max-width: 380px) {
+    header {
+      padding: 0 20px 0 20px;
+      .collapse {
+        a.closeMenu {
+          top: 16px;
+        }
+        .navbar-nav {
+          background: var(--primaryTextColor) url(http://localhost:3001/static/media/bgMenuMobile.6ed068c….png) no-repeat center / cover;
+          height: 100%;
+          padding: 160px 42px 20px;
+          li {
+            padding-bottom: 6px;
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+        &::before {
+          right: inherit;
+          top: 80px;
+          font-size: 39px;
+          opacity: 0.2;
+          left: 55px;
+          transform: inherit;
+        }
+      }
+      .listVeiculos {
+        padding: 20px 20px 20px;
+        .itemNossosVeiculos {
+          margin: 0 auto 10px;
+          .desc {
+            padding: 10px 10px 4px 20px;
+          }
+        }
+        h3 {
+          margin-top: 20px;
+          font-size: 18px;
+          left: 30px;
+        }
+        .foto {
+          img {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }

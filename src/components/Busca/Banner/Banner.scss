@@ -1,0 +1,83 @@
+// buscaBanner
+
+.buscaBanner{
+    background: url(./img/bg-busca.png) no-repeat center / cover;
+    height: 400px;
+    padding-top: 50px;
+    .boxBuscaBanner{
+        min-height: 300px;
+        display: table;
+        position: relative;
+        .textBuscaBanner{
+            display: table-cell;
+            vertical-align: middle;
+            min-height: 400px;
+            position: relative;
+            text-align: center;
+            h3{
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: var(--whiteColor);
+                font-weight: 900;
+                text-transform: uppercase;
+                font-size: 34px;
+                color: transparent;
+                line-height: 40px;
+            }
+            h2{
+                font-size: 42px;
+                font-weight: 900;
+                color: var(--whiteColor);
+                text-transform: uppercase;
+                line-height: 40px;
+                i{
+                    background: url(../../Home/ExperienciaPersonalizada/img/icon-exclusividade.svg) no-repeat center;
+                    width: 40px;
+                    height: 30px;
+                    display: inline-block;
+                }
+                strong{
+                    color: var(--tertiaryColor);
+                }
+            }
+        }
+    }
+
+
+}
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .buscaBanner{
+        background: linear-gradient(90deg, #2F2F2F -6.87%, #2F2F2F 107.94%);
+        .boxBuscaBanner {
+            .textBuscaBanner{
+                h3 {
+                    color: #ABABAB;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 0.72px;
+                    text-transform: uppercase;
+                    -webkit-text-stroke-width: 0;
+                }
+                h2 {
+                    font-size: 34px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,190 @@
+//Servicos
+
+.EsteticaServicos{
+    height: auto;
+    background: #E6E6E6 url(./img/efeitoServicos.webp) no-repeat top left;
+    padding: 120px 0 140px;
+    h2{
+        color: #272727;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;  
+        margin-bottom: 40px;
+    }
+    .itemServicos{
+        margin-top: 30px;
+        position: relative;
+        .imgServicos{
+            width: 60%;
+            height: 300px;
+            z-index: 1;
+            position: relative;
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+        .textoServicos{
+            background: #FFF;
+            z-index: 0;
+            width: 60%;
+            height: 4020px;
+            display: inline-block;
+            top: -30px;
+            position: absolute;
+            right: 0;
+            .textoIncluirServicos{
+                padding: 40px 20px;
+                text-align: left;
+                width: 50%;
+                margin-right: 10%;
+                float: right;
+                display: inline-block;
+                h4{
+                    color: #C1C1C1;
+                    font-size: 11.138px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    letter-spacing: 0.668px;
+                    text-transform: uppercase;
+                    text-align: left;
+                    margin-top: 40px;
+                }
+                h2{
+                    color: #272727;
+                    font-size: 25px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 13px;
+                    text-align: left;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 22px;
+                    letter-spacing: 0.78px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .slick-dots {
+        bottom: -60px;
+        li.slick-active button:before {
+            font-size: 15px;
+            color: var(--tertiaryColor);
+        }
+     }
+    .slick-arrow{
+    display: none !important;
+    }
+     .controlSlider{
+        position: relative;
+        a.nextSlider {
+            border: 1px solid #D0D0D0;
+            width: 52px;
+            height: 52px;
+            z-index: 1;
+            background: #FFF;
+            position: absolute;
+            right: 19px;
+            bottom: 6px;
+            color: #D0D0D0;
+            text-align: center;
+            line-height: 48px;
+            transition: all ease-in 0.2s;
+            font-size: 12px;
+            &:hover{
+                background: #F5F5F5;
+                cursor: pointer;
+            }
+        }
+        a.prevSlider {
+            border: 1px solid #D0D0D0;
+            width: 52px;
+            height: 52px;
+            z-index: 1;
+            background: #FFF;
+            position: absolute;
+            right: 70px;
+            bottom: 6px;
+            color: #D0D0D0;
+            text-align: center;
+            line-height: 48px;
+            transition: all ease-in 0.2s;
+            font-size: 12px;
+            &:hover{
+                background: #F5F5F5;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .EsteticaServicos {
+        background-size: 150px;
+        padding: 120px 0 80px;
+        h2 {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+        .slick-slider{
+            padding: 0 10px;
+        }
+        .controlSlider {
+            bottom: -25px;
+        }
+        .itemServicos {
+            .imgServicos {
+                width: 100%;
+                height: 190px;
+            }
+            .textoServicos {
+                background: #FFF;
+                z-index: 0;
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                top: -42px;
+                position: relative;
+                right: 0;
+                padding: 0px 20px !important;
+                .textoIncluirServicos {
+                    padding: 40px 20px;
+                    width: 100%;
+                    margin-right: 0;
+                    h4 {
+                        margin-top: 10px;
+                    }
+                    h2 {
+                        font-size: 20px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

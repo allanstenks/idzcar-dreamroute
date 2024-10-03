@@ -1,0 +1,110 @@
+// ComoFunciona
+
+.ComoFunciona{
+    text-align: center;
+    padding: 120px 0;
+    background: #FFF;
+    .boxComoFunciona{
+        .textComoFunciona{
+            position: relative;
+            text-align: center;
+            h3{
+                color: #272727;
+                text-align: center;
+                font-family: "Red Hat Display";
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: uppercase;
+                margin-bottom: 80px;
+            }
+            h2{
+                font-size: 50px;
+                font-weight: 900;
+                color: var(--whiteColor);
+                text-transform: uppercase;
+                line-height: 40px;
+            }
+            p{
+                color: #F3F3F3;
+                text-align: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: 1.08px;
+            }
+
+        }
+    }
+    .itemComoFunciona{
+        text-align: center;
+        i{
+            width: 117px;
+            height: 117px;
+            background: #2CBE48; 
+            display: inline-block;
+            position: relative;
+            border-radius: 200px;
+            margin-bottom: 20px;
+            padding-top: 28px;
+        }
+        h4{
+            color: #35363A;
+            text-align: center;
+            font-size: 17px;
+            font-style: normal;
+            text-align: center;
+            font-weight: 800;
+            line-height: 112.3%;
+            letter-spacing: 1.02px;
+            text-transform: uppercase;   
+        }
+    }
+
+
+}
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .ComoFunciona {
+        padding: 80px 30px;
+        .boxComoFunciona {
+            .textComoFunciona {
+                h3 {
+                    font-size: 24px;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .itemComoFunciona {
+            i {
+                width: 70px;
+                height: 70px;
+                img {
+                    width: 28px;
+                    top: -8px;
+                    position: relative;
+                }
+            }
+            h4 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+

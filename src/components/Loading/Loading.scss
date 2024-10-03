@@ -1,0 +1,11 @@
+.loading-ring{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    padding:20px;
+    background: none;
+    &.full{
+        height:calc(100vh - 490px)
+    }
+}

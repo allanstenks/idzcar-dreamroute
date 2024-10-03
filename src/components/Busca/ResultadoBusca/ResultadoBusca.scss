@@ -1,0 +1,622 @@
+// Resultado Busca
+.loadingBoxBusca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:60vh;
+}
+
+
+.buscaBarra{
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    top: -100px;
+    z-index: 2;
+    .tipos{
+        display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        li{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+            a{
+                background: var(--whiteColor);
+                color: #272727;
+                border: 1px solid #ECECEC;
+                border-right: none;
+                padding: 11px 34px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: 700;
+                display: block;
+                transition: all ease-in 0.2s;
+                &.active{
+                    background: var(--tertiaryColor);
+                    border-color: var(--tertiaryColor);
+                    &:hover{
+                        background: var(--tertiaryColor);
+                        border-color: var(--tertiaryColor) !important;
+                        color: var(--primaryColor);
+                        cursor: inherit;
+                    }
+                }
+                &:hover{
+                    background: var(--primaryColor);
+                    color: var(--whiteColor);
+                    border-color: var(--primaryColor) !important;
+                    cursor: pointer;
+                }
+            }
+            &:last-child a{
+                border-right: 1px solid var(--secondaryTextColor); 
+                border-radius:  0 4px 0 0;
+            }
+            &:nth-child(1){
+                a{
+                    border-radius: 4px 0 0 0;
+                }
+            }
+        }
+    }
+    .btn.btn-icon {
+        padding: 9px 20px 14px 20px !important;
+        margin-top: 10px;
+    }
+    .buscaFiltros{
+        background: var(--whiteColor);
+        padding: 20px 30px 15px 30px;
+        width: 100%;
+        display: flex;
+        border-radius: 6px;
+        position: relative;
+        .buscaBtn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            .btn.btn-icon {
+                padding: 9px 20px 14px 20px !important;
+                margin-top: 0;
+                width: 120px;
+                height: 119px;
+                line-height: 100px;
+                font-size: 30px !important;
+                border-radius: 0 5px 5px 0 !important;
+                &:hover{
+                    background: var(--primaryTextColor);
+                }
+            }
+        }
+        .buscaCampos{
+            width: calc(100% - 120px);
+            .row{
+                > div:last-child{
+                    .Label{
+                        border: none !important;
+                    }
+                }
+            }
+            .Dropdown{
+                border-radius: 0;
+                background: var(--whiteColor);
+                border: none;
+                box-shadow: none !important;
+                width: 100%;
+                height: 48px;
+                line-height: 30px;
+                padding-left: 0;
+                .p-icon.p-dropdown-trigger-icon.p-clickable{
+                    color: #B1B7D1;
+                }
+                .p-dropdown-trigger{
+                    position: relative;
+                }
+
+            }
+            .p-dropdown {
+                span{
+                    color: var(--primaryColor);
+                    opacity: 0.6 !important;
+                    font-weight: 400 !important;
+                    padding-left: 0;
+                }
+            }
+            label{
+                width: 100%;
+                margin-bottom: 12px;
+                padding: 0 10px;
+                border-right: 1px solid #ECECEC !important;
+                > span{
+                    color: var(--primaryColor);
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    width: 100%;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    font-weight: 700;
+                }
+            }
+        }
+        .maisFiltros{
+            display: none !important;
+        }
+
+    }
+}
+.resumoBusca {
+    padding: 40px 0 20px 0;
+    margin-top: -80px;
+    h2{
+        color: var(--primaryColor);
+        font-size: 38px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    h4{
+        color: #8F8A8A;
+        font-size: 16px;
+    }
+}
+.naoEncontradosBusca{
+    padding: 40px 0 80px 0;
+    margin-top: 0px;
+    background: #FFF;
+    margin-top: -180px;
+    position: relative;
+
+    h2{
+        color: var(--primaryColor);
+        font-size: 28px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+    h4{
+        color: #272727;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 1.02px;
+        margin-bottom: 60px;
+    }
+    .naoEncontradosImg{
+        background: url(./img/naoEncontradosImg.png) no-repeat center / cover;
+        width: 100%;
+        height: 620px;
+        border-radius: 4px;
+    }
+
+    .form{
+        border-radius: 6px;
+        border: 1px solid #E0E0E0;
+        background: #FFF;
+        overflow: hidden;
+        position: relative;
+        .naoEncontradosForm{
+            padding: 60px 80px;
+            h3{
+                color: #ABABAB;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.78px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            h2{
+                color: #35363A;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 112.3%; /* 31.444px */
+                letter-spacing: 1.68px;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+                margin-top: 0;
+            }
+            .Label {
+                width: 100%;
+                input{
+                    border-radius: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    border: none;
+                    width: 100%;
+                    border-bottom: 1px solid #dedede !important;
+                    box-shadow: none !important;
+                    background: none;
+                    color: #FFF;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    height: 48px;
+                    &::placeholder {
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: #9B9B9B !important;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .btn-secondary{
+                float: left;
+                padding-left: 80px !important;
+                padding-right: 80px !important;
+                
+            }
+            .validacao{
+                height: 40px;
+            }
+    
+        }
+    }
+}
+.resultadoBusca{
+    padding: 20px 0 40px;
+    .veiculoBusca{
+        border: 1px solid #D8D8D8;
+        margin-bottom: 30px;
+        border-radius: 6px;
+        overflow: hidden;
+        .foto{
+            height: 280px;
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: url(./img/bgCarros.png) no-repeat center / cover;
+                z-index: -1;
+                border-radius: 6px;
+            }
+            span{
+                background: rgb(48,189,68);
+                background: linear-gradient(90deg, rgba(48, 189, 68, 0.55) -17.83%, rgba(29, 29, 29, 0.90) 130.07%);
+                border: 1px solid var(--tertiaryColor);
+                color: var(--whiteColor);
+                font-weight: 600;
+                top: 20px;
+                left: 20px;
+                border-radius: 6px;
+                position: absolute;
+                padding: 4px 20px;
+                text-transform: uppercase;
+                font-size: 13px;
+                letter-spacing: 1px;
+            }
+            span.baixo{
+                background: linear-gradient(90deg, #6C6C6C 50%, #d9d9d970  100%);
+                color: var(--whiteColor);
+                font-weight: 600;
+                top: 0;
+                left: 0;
+                border-radius: 8px 0 0 0;
+                position: absolute;
+                padding: 4px 20px;
+                text-transform: uppercase;
+                font-size: 13px;
+                letter-spacing: 1px;
+                border: none;
+            }
+        }
+        .desc{
+            position: relative;
+            padding: 30px;
+            span.Vendido{
+                border: 0.845px #2CBC46;
+                background: rgba(48, 189, 68, 1); 
+                color: #FFF;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 900;
+                letter-spacing: 0.71px;
+                line-height: 24px;
+                text-transform: uppercase;
+                padding: 8px 30px;
+                display: inline-block;
+                margin: 14px 0;
+                height: 36px;
+                position: absolute;
+                top: -40px;
+                left: -10px;
+                .icons{
+                    font-size: 20px;
+                    position: relative;
+                    top: -2px;
+                }
+                &::before{
+                    content: "";
+                    width: 0; 
+                    height: 0; 
+                    border-left: 9px solid transparent;
+                    border-right: 9px solid transparent;
+                    border-bottom: 9px solid rgba(48, 189, 68, 1);
+                    position: absolute;
+                    bottom: -7px;
+                    left: 0.5px;
+                    transform: rotate(50deg);
+                }
+            }
+            h6{
+                color: var(--tertiaryColor);
+                font-size: 11px;
+                text-transform: uppercase;
+            }
+            h3{
+                color: var(--primaryColor);
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            h4{
+                color: var(--secondaryColor);
+                font-size: 13px;
+                text-transform: uppercase;
+                padding-bottom: 10px;
+            }
+            span{
+                color: var(--secondaryColor);
+                font-size: 13px;
+                text-transform: uppercase;
+                height: 20px;
+            }
+            h5{
+                color: var(--primaryColor);
+                font-size: 13px;
+                text-transform: uppercase;
+                border-bottom: 1px solid #E5E4E4;
+                padding-bottom: 0;
+                height: 20px;
+                &.noneBorder{
+                    border: none;
+                }
+            }
+            .acao{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 20px;
+                .valor{
+                    
+                    h2{
+                        color: var(--primaryColor);
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                }
+                .btn{
+                    line-height: 28px !important;
+                    padding: 8px 16px 8px 20px !important;
+                    height: 45px;
+                    margin-top: 13px;
+                    svg{
+                        transform: rotate(45deg);
+                        font-size: 24px;
+                        color: #B8A558;
+                    }
+                }
+            }
+        }
+    }
+}
+ul.p-dropdown-items {
+    background: #EAEAEA;
+    padding: 10px  10px 5px !important;
+    li.p-dropdown-item {
+        display: flex;
+        width: 100%;
+        height: 40px;
+        align-items: center;
+        background: #FFF !important;
+        border-radius: 8px !important;
+        margin-bottom: 5px !important;
+        padding: 10px 26px 10px 12px !important;
+    }
+    li.p-dropdown-item.p-highlight {
+        border-radius: 8px;
+        border: 1px solid #29BD43;
+        background: #BCF0C6 url(./img/check-busca.png) no-repeat center right 10px !important;
+        color: #000 !important;
+        font-weight: 600;
+    }
+    
+}
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1380px) {
+    .resultadoBusca {
+        .veiculoBusca {
+            .desc {
+                padding: 30px 20px;
+                .acao {
+                    .valor {
+                        h2 {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (max-width: 768px) {
+    .buscaBarra{
+        padding: 0 15px;
+        position: relative;
+        background: linear-gradient(180deg, #2F2F2F -6.87%, #2C2C2C 100%);
+        .tipos {
+            display: flex;
+            
+            li {
+                flex-grow: 3;
+                margin-bottom: 20px;
+                padding: 0 4px 0 0;
+                &:nth-child(3){
+                    padding: 0;
+                }
+                a {
+                    padding: 10px 9px;
+                    font-size: 13px;
+                    font-weight: 600;
+                    background: #35363A;
+                    color: #FFF;
+                    border: none !important;
+                    border-radius: 6px !important;
+                    text-align: center;
+                }
+            }
+        }
+        .buscaFiltros {
+            background: none;
+            border: none;
+            width: 100%;
+            display: inline-block;
+            padding: 0;
+            padding-bottom: 40px;
+
+            .buscaCampos {
+                padding: 30px 15px 10px 15px;
+                width: 100%;
+                border-radius: 4px;
+                background: #35363A;
+                border: none;
+                display: inline-block;
+                margin-bottom: 30px;
+                .Dropdown {
+                    background: none;
+                    border-bottom: 1px solid #EAEAEA;
+                    margin-bottom: 20px;
+                    .p-dropdown-label{
+                        color: #FFF;
+                    }
+                    input{
+                        color: #FFF;
+                    }
+                    
+                }
+                label {
+                    border: none !important;
+                    > span {
+                        color: #FFF;
+                    }
+                }
+
+            }
+            .btn.btn-icon:not(.maisFiltros) {
+                background: var(--tertiaryColor);
+                width: 45%;
+                min-width: 165px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                &::before{
+                    content: "BUSCAR";
+                    font-size: 16px;
+                    margin-top: 4px;
+                    order: 2;
+                }
+                svg{
+                    order: 1;
+                    margin-top: 4px;
+                    margin-right: 6px;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+            .buscaBtn{
+                display: flex;
+                .maisFiltros {
+                    display: inline-block !important;
+                    background: none !important;
+                    font-size: 12px !important;
+                    padding: 0 !important;
+                    width: auto !important;
+                    padding: 17px 0 !important;
+                    text-align: right;
+                    justify-content: space-evenly;
+                    flex-grow: 2;
+                    svg{
+                        font-size: 20px;
+                        margin-right: 4px;
+                        position: relative;
+                        top: -1px;
+                    }
+                }
+            }
+
+        }
+        &::after{
+            position: absolute;
+            right: 0;
+            bottom: -39px;
+            content: "";
+            width: 100px;
+            height: 30px;
+            background: url(./img/efeitoMenu.png) no-repeat right top;
+            width: 200px;
+            height: 40px;
+        }
+    }
+    .resumoBusca {
+        padding: 20px 15px;
+        text-align: center;
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+        }
+    }
+    .resultadoBusca{
+        padding: 20px 15px;
+        .veiculoBusca {
+            .desc {
+                padding: 20px;
+                .acao {
+                    .valor {
+                        h2 {
+                            font-size: 16px;
+                        }
+                    }
+                    .btn {
+                        line-height: 20px !important;
+                        padding: 10px 30px !important;
+                        height: 40px;
+                        margin-top: 13px;
+                        font-size: 10px !important;
+                    }
+                }
+            }
+            .foto{
+                height: 240px;
+            }
+        }
+    }
+}
+

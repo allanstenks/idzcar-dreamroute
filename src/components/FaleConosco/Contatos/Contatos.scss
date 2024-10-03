@@ -1,0 +1,124 @@
+// Contatos
+
+.Contatos{
+    height: auto;
+    padding: 120px 0 40px;
+    text-align: center;
+    background: var(--whiteColor);
+    .btn {
+        &.btn-down{
+            margin-top: 80px;
+        }
+    }
+    .boxContatos{
+        display: table;
+        position: relative;
+        .textContatos{
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            h2{
+                color: #272727;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-align: left;
+                letter-spacing: 1.8px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                width: 90%;
+            }
+            h4{
+                color: var(--tertiaryColor);
+                font-size: 18px;
+                font-style: normal;
+                text-align: left;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;     
+            }
+            p{
+                color: #272727;
+                text-align: left;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-bottom: 40px;
+            }
+            ul{
+                display: inline-block;
+                margin: 0;
+                text-align: left;
+                padding: 0;
+                border-top: 1px solid #D2D2D2;
+                width: 100%;
+                padding: 20px 0;
+                li{
+                    color: var(--tertiaryColor);
+                    display: inline-block;
+                    margin: 0;
+                    padding: 0;
+                    a{
+                        color: var(--tertiaryColor);
+                        margin: 0 20px 0 0;
+                        padding: 0;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    img{
+        width: 90%;
+        float: left;
+        margin-top: 40px;
+    }
+}
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .Contatos {
+        height: auto;
+        padding: 40px 20PX 40px;
+        text-align: center;
+        background: var(--whiteColor);
+        img {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        .btn {
+            &.btn-down{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .boxContatos {
+            .textContatos {
+                h2 {
+                    font-size: 22px;
+                }
+            }
+        }
+        .boxContatos {
+            .textContatos {
+                p{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

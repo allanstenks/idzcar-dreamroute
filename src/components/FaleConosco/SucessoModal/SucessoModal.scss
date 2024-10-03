@@ -1,0 +1,25 @@
+.SucessoModal{
+    .modal-header{
+        background: url(./img/modalEfeito1.webp) no-repeat top left,  url(./img/modalEfeito2.webp) no-repeat bottom right;
+        padding: 30px 30px 50px 30px;
+        border: none;
+        border-radius: 8px;
+        i{
+            font-size: 40px;
+            color: var(--tertiaryColor);
+        }
+        p{
+            margin-bottom: 20px;
+            padding: 10px 30px;
+        }
+        .modal-title{
+            color: #272727;
+            text-align: center;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 28px; /* 127.273% */
+            text-transform: uppercase;
+        }
+    }
+}

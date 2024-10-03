@@ -1,0 +1,106 @@
+.loadingBoxDetails{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:80vh;
+}
+
+.transition{
+     transition: .1s;
+    &-default{
+       
+        opacity: 1;
+        pointer-events: auto;
+    }
+    &-none{ 
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+.fichatecnicaVeiculo{
+    padding: 80px 0;
+    position: relative;
+    background:#E6E6E6;
+    h3{
+        color: #000000;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #C6C6C6;
+        padding-bottom: 10px;
+        strong{
+            font-weight: 800;
+        }
+    }
+    h4{
+        color: #35363A;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 0.84px;
+        text-transform: uppercase;  
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            margin: 0;
+            margin-left: -5px;
+            padding: 8px 30px;
+            list-style: none;
+            position: relative;
+            color: #6B6B6B;
+            &::before{
+                content: "";
+                width: 5px;
+                height: 5px;
+                background: #ABABAB;
+                border-radius: 10px;
+                position: absolute;
+                top: 16px;
+                left: 14px;
+            }
+            &:nth-child(odd){
+                background: #DADADA;
+            }
+            &:nth-child(even){
+                background: none;
+            }
+        }
+        
+    }
+}
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .fichatecnicaVeiculo {
+        overflow: hidden;
+       padding: 60px 20px;
+       h4 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
+}
+

@@ -1,0 +1,63 @@
+// Numeros
+
+.numeros{
+    background:  url(./img/efeito1.webp) no-repeat left top, #2F2F2F url(./img/efeito2.webp) no-repeat right bottom;
+    padding: 40px 0;
+    text-align: center;
+    i{
+        color: var(--tertiaryColor);
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
+    h4{
+        color: var(--secondaryTextColor);
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    h3{
+        color: var(--whiteColor);
+        font-weight: 800;
+    }
+    .row{
+        > div{
+            border-right: 1px solid #515151;
+        }
+        > div:last-child{
+            border-right: none;
+        }
+    }
+}
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .numeros {
+        background-size: 150px;
+        h3 {
+            width: 180px;
+            border-bottom: 1px solid #515151;
+            margin: auto;
+            padding-bottom: 30px;
+        }
+        .container{
+            .row{
+                > div:nth-child(3){
+                    h3{
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+}
+

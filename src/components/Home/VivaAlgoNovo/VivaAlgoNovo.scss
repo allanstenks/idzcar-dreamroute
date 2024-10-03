@@ -1,0 +1,59 @@
+// VivaAlgoNovo
+
+.VivaAlgoNovo{
+    padding: 50px 0;
+    position: relative;
+    background: url(./img/BgVidaAlgoNovo.png) no-repeat center / cover;
+    height: 380px;
+    text-align: center;
+    .titilos{
+        color: var(--whiteColor) !important;
+        text-align: center;
+        font-size: 43px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 0.86px;
+        text-transform: uppercase;
+        strong{
+            color: var(--tertiaryColor);
+        }
+        i{
+            background: url(../ExperienciaPersonalizada/img/icon-exclusividade.svg) no-repeat center;
+            width: 40px;
+            height: 30px;
+            display: inline-block;
+        }
+    }
+    h2{
+        margin-bottom: 0;
+        padding-bottom: 20px;
+    }
+    p{
+        color: #CCC;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .VivaAlgoNovo {
+        height: auto;
+    }
+}

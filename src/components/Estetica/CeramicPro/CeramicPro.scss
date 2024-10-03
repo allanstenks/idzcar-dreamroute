@@ -1,0 +1,134 @@
+// Conceito
+
+.CeramicPro{
+    padding: 40px 0 120px;
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+    .boxCeramicPro{
+        min-height: 600px;
+        display: table;
+        position: relative;
+        .textConceito{
+            display: table-cell;
+            vertical-align: middle;
+            min-height: 600px;
+            position: relative;
+            h2{
+                color: #272727;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 1.8px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                width: 90%;
+            }
+            p{
+                color: #8F8A8A;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 142.3%; /* 18.499px */
+                letter-spacing: 0.78px;
+                margin-bottom: 40px;
+                width: 90%;
+            }
+            h3{
+                color: #E91D8F;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            h4{
+                color: #ABABAB;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.78px;
+                text-transform: uppercase;    
+                margin-bottom: 0;  
+            }
+        }
+    }
+
+    .imgCeramicPro{
+        position: relative;
+        img{
+            width: 90%;
+            float: right;
+            margin-top: 160px;
+        }
+    }
+    &::before{
+        content: "";
+        background: #FFF url(./img/bgCeramicPro.webp) no-repeat left top / contain;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+}
+
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .CeramicPro{
+        padding: 0 20px 0;
+        &::before {
+            content: "";
+            background: #FFF url(./img/bgCeramicPro.webp) no-repeat right top / contain;
+            width: 100%;
+            height: 258px;
+            position: absolute;
+            top: inherit;
+            bottom: 0;
+            left: 0;
+        }
+        .imgCeramicPro {
+            text-align: center;
+            img {
+                width: 90%;
+                margin: auto;
+                float: inherit;
+                position: relative;
+                top: -80px;
+            }
+        }
+        .boxCeramicPro {
+            .textConceito {
+                h2 {
+                    font-size: 22px;
+                    margin-bottom: 0;
+                }
+                h3 {
+                    font-size: 22px;
+                }
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,192 @@
+// Depoimentos
+
+.depoimentos{
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: "depoiemntos";
+        text-transform: uppercase;
+        background: linear-gradient(90deg, rgba(217,217,217,0.60) 0%, rgba(217,217,217,0.3) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 62px;
+        position: absolute;
+        right: -150px;
+        top: 240px;
+        font-weight: 900;
+        transform: rotate(270deg);
+    }
+    .itemDepoimento{
+        background: #E1E1E1;
+        padding: 40px 30px;
+        position: relative;
+        border: 1px solid #E1E1E1;
+        transition: all ease-in 0.2s;
+        &::before{
+            content: "";
+            width: 80px;
+            height: 100px;
+            background: url(./img/aspas.png) no-repeat center;
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+        p{
+            color: var(--secondaryTextColor);
+            font-size: 14px;
+            height: 100px;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            overflow: hidden;
+            -webkit-box-orient: vertical; 
+            margin-bottom: 30px;
+            overflow-y: auto;
+            height: 120px;
+            padding-right: 6px;
+                &::-webkit-scrollbar {
+                    width: 6px;
+                }
+                
+                &::-webkit-scrollbar-thumb {
+                    background-color: var(--tertiaryColor);
+                    border-radius: 5px;
+                }
+                
+                &::-webkit-scrollbar-track {
+                    background-color: #f1f1f1;
+                }
+        }
+        .avatar{
+            display: flex;
+            .desc{
+                display: inline-block;
+                margin-left: 10px;
+                h4{
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    color: var(--primaryTextColor);
+                    margin-bottom: 2px;
+                    margin-top: 4px;
+                }
+                h5{
+                    font-size: 11px;
+                    color: var(--secondaryTextColor);
+                }
+            }
+            i{
+                width: 40px;
+                height: 40px;
+                border-radius: 200px;
+                background: #666;
+            }
+        }
+        .nome-avatar{
+            background: var(--tertiaryColor);
+            width: 40px;
+            height: 40px;
+            color: var(--whiteColor);
+            font-weight: 600;
+            padding: 8px 2px;
+            border-radius: 200px;
+            text-align: center;
+        }
+        &:hover{
+            border: 1px solid #bdbbbb; 
+
+        }
+
+    }
+    .sliderDepoimento{
+        padding:  0;
+    }
+    .slick-slider{
+        .slick-slide{
+            padding: 10px;
+        }
+    }
+    .slick-arrow{
+        display: none !important;
+    }
+    .SliderControl{
+        position: relative;
+        top: -100px;
+        
+        a.nextSlider {
+            border: 1px solid #D0D0D0;
+            width: 52px;
+            height: 52px;
+            z-index: 1;
+            background: #FFF;
+            position: absolute;
+            right: 10px;
+            bottom: -50px;
+            color: #D0D0D0;
+            text-align: center;
+            line-height: 48px;
+            transition: all ease-in 0.2s;
+            font-size: 12px;
+            &:hover{
+                background: #F5F5F5;
+                cursor: pointer;
+            }
+        }
+        a.prevSlider {
+            border: 1px solid #D0D0D0;
+            width: 52px;
+            height: 52px;
+            z-index: 1;
+            background: #FFF;
+            position: absolute;
+            right: 61px;
+            bottom: -50px;
+            color: #D0D0D0;
+            text-align: center;
+            line-height: 48px;
+            transition: all ease-in 0.2s;
+            font-size: 12px;
+            &:hover{
+                background: #F5F5F5;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .depoimentos {
+        padding: 80px 30px 120px;
+        position: relative;
+        overflow: hidden;
+        .titilos {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &::before{
+            display: none;
+        }
+        .container{
+            > .row{
+                .SliderControl {
+                    order: 2;
+                }
+            }
+        }
+        .SliderControl {
+            top: 10px;
+        }
+    }
+}

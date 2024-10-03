@@ -1,0 +1,44 @@
+// BannerInstitucional
+
+.BannerInstitucional{
+    background: url(./img/bannerDefault.png) no-repeat center / cover;
+    height: 400px;
+    .boxBannerInstitucional{
+        min-height: 400px;
+        display: table;
+        position: relative;
+        .textBannerInstitucional{
+            display: table-cell;
+            vertical-align: middle;
+            min-height: 400px;
+            position: relative;
+            text-align: center;
+            h3{
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: var(--whiteColor);
+                font-weight: 900;
+                text-transform: uppercase;
+                font-size: 38px;
+                color: transparent;
+                line-height: 40px;
+            }
+            h2{
+                font-size: 50px;
+                font-weight: 900;
+                color: var(--whiteColor);
+                text-transform: uppercase;
+                line-height: 40px;
+            }
+            p{
+                color: #F3F3F3;
+                text-align: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                letter-spacing: 1.08px;
+            }
+        }
+    }
+
+
+}

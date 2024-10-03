@@ -1,0 +1,213 @@
+.formVenda{
+    background: linear-gradient(180deg, #EEE 0%, rgba(237, 237, 237, 0.00) 100%);
+    padding: 0px 0 80px 0;
+    background: linear-gradient(180deg, #EEE 0%, rgba(237, 237, 237, 0.00) 100%);
+
+    h2{
+        color: var(--primaryColor);
+        font-size: 32px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    h4{
+        color: #272727;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: 1.02px;
+        margin-bottom: 60px;
+    }
+    .formVendaImg{
+        width: 100%;
+        height: 660px;
+        border-radius: 4px;
+    }
+    .formVendaForm{
+        background: #FFF;
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+        border: 1px solid #DEDEDE;
+        background: #FFF;
+        padding: 60px;
+        h3{
+            color: #272727;
+            font-family: "Red Hat Display";
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        h2{
+            color: #35363A;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 112.3%; /* 31.444px */
+            letter-spacing: 1.68px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            margin-top: 0;
+        }
+        .Label {
+            width: 100%;
+            input{
+                border-radius: 0;
+                padding-left: 0;
+                padding-right: 0;
+                border: none;
+                width: 100%;
+                border-bottom: 1px solid #dedede !important;
+                box-shadow: none !important;
+                background: none;
+                color: #000;
+                display: inline-block;
+                margin-bottom: 30px;
+                height: 48px;
+                &::placeholder {
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: #9B9B9B !important;
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+        textarea{
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+            border: none;
+            width: 100%;
+            border-bottom: 1px solid #dedede !important;
+            box-shadow: none !important;
+            background: none;
+            color: #000;
+            display: inline-block;
+            margin-bottom: 20px;
+            height: 140px;
+            border-radius: 6px;
+            border: 1px solid #CDCDCD;
+            background: #F0F0F0;
+        }
+        .form-label {
+            color: #A7A7A7;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            letter-spacing: 0.72px;
+            text-transform: uppercase;
+            strong{
+                color: #2CBE48;
+            }
+        }
+        .btn-secondary{
+            padding-left: 80px !important;
+            padding-right: 80px !important;
+        }
+        .validacao{
+            height: 40px;
+        }
+        .Dropdown {
+            border-radius: 0;
+            border: none;
+            background: #FFF;
+            border-bottom: 1px solid #DEDEDE !important;
+            box-shadow: none !important;
+            width: 100%;
+            height: 48px;
+            line-height: 30px;
+            padding-left: 0;
+            margin-bottom: 30px;
+
+            .p-icon.p-dropdown-trigger-icon.p-clickable {
+                color: #B1B7D1;
+            }
+
+            .p-dropdown-trigger {
+                position: relative;
+            }
+
+        }
+
+        .p-dropdown {
+            span {
+                color: #9B9B9B !important;
+                opacity: 1 !important;
+                font-weight: 400 !important;
+                padding-left: 0;
+            }
+
+        }
+        .Btns{
+            margin: auto;
+        }
+    }
+}
+
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .formVenda {
+        padding: 40px 30px;
+        h2 {
+            font-size: 21px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        .formVendaForm {
+            padding: 40px 30px;
+            h3 {
+                font-size: 17px;
+            }
+            .p-dropdown {
+                span {
+                    font-size: 14px;
+                }
+            }
+            .Label {
+                input {
+                    margin-bottom: 10px;
+                    height: 48px;
+                }
+            }
+        }
+        .dropzone {
+            min-height: 80px;
+            padding: 9px;
+            .img {
+                height: 69px;
+            }
+            p {
+                font-size: 12px;
+            }
+            h6 {
+                font-size: 11px;
+            }
+            i {
+                font-size: 22px;
+            }
+        }
+        
+    }
+    .mMobile.mt-5{
+        margin-top: 0 !important;
+    }
+}

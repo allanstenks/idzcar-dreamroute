@@ -1,0 +1,292 @@
+// Numeros
+
+.menu{
+    background:  #EEEEEE;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 80;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all ease-in 1s;
+    .boxVeiculos{
+        min-height: 100vh;
+        display: table;
+        right: -50%;
+        position: relative;
+        transition: all ease-in 0.5s;
+        .listVeiculos{
+            display: table-cell;
+            vertical-align: middle;
+            min-height: 100vh;
+            position: relative;
+            .itemNossosVeiculos{
+                max-width: 320px;
+                margin-bottom: 40px;
+                margin: 0 auto 20px;
+                position: relative;
+                .foto{
+                    width: 100%;
+                    height: 212px;
+                    display: inline-block;
+                    text-align: center;
+                    img{
+                        position: relative;
+                        z-index: 1;
+                        width: 95%;
+                    }
+                }
+                .desc{
+                    background: #E2E2E2;
+                    border-radius: 4px;
+                    border: 1px solid #D7D7D7;
+                    margin-top: -80px;
+                    display: inline-block;
+                    width: 100%;
+                    padding: 30px 30px 20px;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    transition: all ease-in 0.2s;
+                    .servico{
+                        .textServico{
+                            h6{
+                                color: var(--secondaryTextColor);
+                                text-transform: uppercase;
+                                font-size: 12px;
+                                transition: all ease-in 0.2s;
+                            }
+                            h5{
+                                color: var(--primaryTextColor);
+                                font-size: 16px;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                transition: all ease-in 0.2s;
+                            }
+                            
+                        }
+                    }
+                    .btn-plus {
+                        width: 46px;
+                        height: 46px;
+                        font-size: 15px;
+                        line-height: 42px;
+                        transition: all ease-in 0.2s;
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                    .desc{
+                        background: var(--tertiaryColor);
+                        h6{
+                            color: var(--primaryColor) !important;
+                        }
+                        h5{
+                            color: var(--whiteColor) !important;
+                        }
+                    }
+                    .btn-plus{
+                        background: var(--primaryColor);
+                        border-color: var(--primaryColor) !important;
+                        color: var(--whiteColor) !important;
+                        width: 66px !important;
+                    }
+                }
+            }
+            > div:nth-child(1) .itemNossosVeiculos{
+               transition: all ease-in 0.5s;
+               right: -500px;
+            }
+            > div:nth-child(2) .itemNossosVeiculos{
+                transition: all ease-in 0.7s;
+                right: -1000px;
+             }
+             > div:nth-child(3) .itemNossosVeiculos{
+                transition: all ease-in 0.8s;
+                right: -1500px;
+             }
+        }
+    }
+    .boxChamadas{
+        background: url(./img/efeitoMenuCinza.webp) no-repeat bottom right, url(./img/efeitoMenuVerde.webp) no-repeat left top , url(./img/bg-menu.webp) no-repeat center / cover;
+        min-height: 100vh;
+        display: table;
+        position: relative;
+        transition: all ease-in 0.5s;
+        left: -55%;
+        &::before{
+            content: "Veículos";
+            text-transform: uppercase;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 90px;
+            position: absolute;
+            right: -150px;
+            top: 260px;
+            font-weight: 900;
+            transform: rotate(270deg);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(217,217,217,0.20);
+            color: transparent;
+        }
+        .logoMenu{
+            position: absolute;
+            top: 50px;
+            left: 60px;
+            opacity: 0;
+            transition: all ease-in 0.3s;
+            animation: fadeIn 0.3s ease-in 1s forwards;
+            z-index: 2;
+            cursor: pointer;
+        }
+        .redes{
+            position: absolute;
+            bottom: 30px;
+            right: 60px;
+            text-align: right;
+            opacity: 0;
+            transition: all ease-in 0.9s;
+            animation: fadeIn 0.3s ease-in 2s forwards;
+            z-index: 2;
+            span{
+                color: #5A5A5A;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            li{
+                color: var(--secondaryColor);
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                a{
+                    color: var(--secondaryColor);
+                    margin: 0 0 0 12px;
+                    padding: 0;
+                    font-size: 20px;
+                }
+            }
+        }
+        .nossosVeiculos{
+            display: table-cell;
+            vertical-align: middle;
+            min-height: 100vh;
+            position: relative;
+        }
+        .textVeiculos{
+            text-align: center;
+            margin: auto;
+            opacity: 0;
+            transition: all ease-in 0.5s;
+            animation: fadeIn 0.3s ease-in 1.5s forwards;
+            span{
+                background: rgb(48,189,68);
+                background: linear-gradient(90deg, rgba(48,189,68,0.3) 55%, rgba(29,29,29,0.3) 90%);
+                border: 1px solid var(--tertiaryColor);
+                color: var(--whiteColor);
+                font-weight: 600;
+                border-radius: 4px;
+                padding: 6px 22px;
+                text-transform: uppercase;
+                font-size: 14px;
+                margin-bottom: 30px;
+                display: inline-block;
+            }
+            h3{
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: var(--whiteColor);
+                font-weight: 900;
+                text-transform: uppercase;
+                font-size: 38px;
+                color: transparent;
+                line-height: 40px;
+            }
+            h2{
+                font-size: 50px;
+                font-weight: 900;
+                color: var(--whiteColor);
+                text-transform: uppercase;
+                line-height: 40px;
+            }
+        }
+
+    }
+    &.menuOpen{
+        opacity: 1;
+        .boxVeiculos{
+            right: 0;
+            .listVeiculos{
+                > div:nth-child(1) .itemNossosVeiculos{
+                    right: 0;
+                }
+                > div:nth-child(2) .itemNossosVeiculos{
+                    right: 0;
+                }
+                > div:nth-child(3) .itemNossosVeiculos{
+                    right: 0;
+                }
+            }
+            
+        }
+        .boxChamadas{
+            left: 0;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media(min-width:2000px) and (max-width: 3000px) {
+    .menu {
+        .boxVeiculos {
+            .listVeiculos {
+                .itemNossosVeiculos {
+                    max-width: 420px;
+                    .desc{
+                        padding: 80px 30px 20px 30px;
+                        .servico {
+                            .textServico {
+                                h5 {
+                                    font-size: 22px;
+                                }
+                                h6 {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        .btn-plus {
+                            width: 54px;
+                            height: 54px;
+                            font-size: 24px !important;
+                            line-height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+        .boxChamadas {
+            .textVeiculos {
+                h3 {
+                    font-size: 45px;
+                }
+                h2 {
+                    font-size: 60px;
+                    line-height: 68px;
+                }
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

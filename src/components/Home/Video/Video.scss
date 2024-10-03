@@ -1,0 +1,86 @@
+// Experiência Personalizada
+
+.Video{
+    background:  url(./img/BgVideo.png) no-repeat left top;
+    padding: 40px 0 120px;
+    text-align: center;
+    position: relative;
+    h2{
+        color: #000;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 0.56px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        strong{
+            font-weight: 800;
+        }
+    }
+    .VideoDream{
+        background: url(./img/VideoDream.png) no-repeat center / cover;
+        position: relative;
+        height: 500px;
+        width: 100%;
+        display: inline-block;
+        img{
+            width: 100%;
+        }
+        span{
+            color: #FFF;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 42px;
+            letter-spacing: 0.44px;
+            text-transform: uppercase;
+            position: absolute;
+            top: 50%;
+            z-index: 1;
+            left: 0;
+            width: 100%;
+            margin-top: 30px;
+        }
+        i{
+            background: rgba(237, 237, 237, 0.39) url(./img/play.png) center no-repeat;
+            border: solid  1px rgba(237, 237, 237, 1);
+            backdrop-filter: blur(2px);
+            position: absolute;
+            top: 50%;
+            width: 88px;
+            height: 88px;
+            z-index: 1;
+            left:50%;
+            margin-left: -44px;
+            margin-top: -80px;
+            border-radius: 200px;
+        }
+    }
+}
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1380px) {
+
+}
+@media (max-width: 768px) {
+    .Video{
+        .VideoDream{
+            text-align: center;
+            height: 300px;
+            span{
+                left: 10%;
+                width: 80%;
+            }
+        }
+    }
+}

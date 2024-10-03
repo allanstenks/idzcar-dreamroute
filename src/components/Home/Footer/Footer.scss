@@ -1,0 +1,307 @@
+// Footer
+
+footer{
+    padding: 40px 0;
+    background:  var(--primaryColor);
+    nav{
+        text-align: right;
+        ul{
+            margin: 30px 0 0;
+            display: inline-block;
+            li{
+                display: inline-block;
+                list-style: none;
+                position: relative;
+                padding: 0 8px;
+                a{
+                    color: var(--secondaryColor);
+                    text-decoration: none;
+                    padding: 0;
+                    font-size: 14px;
+                    position: relative;
+                    &:hover{
+                      color: var(--tertiaryColor);
+                      &::before{
+                        display: none;
+                        content: "";
+                        background: var(--tertiaryColor);
+                        width: 100%;
+                        height: 2px;
+                        position: absolute;
+                        top: -10px;
+                        left: 0;
+                      }
+                    }
+                }
+            }
+        }
+    }
+    .sitemap{
+        text-align: left;
+        h3{
+            color: var(--tertiaryColor);
+            font-size: 14px;
+            font-weight: 800;
+            padding-bottom: 4px;
+            position: relative;
+            width: 100%;
+            text-align: right;
+            &::before{
+                content: "";
+                border-bottom: 2px solid var(--secondaryColor);
+                position: absolute;
+                bottom: -2px;
+                right: 0;
+                width: 100px;
+            }
+        }
+        ul{
+            padding: 0;
+            margin-top: 0;
+            width: 100%;
+            text-align: right;
+            li{
+                display: inline-block;
+                padding: 0 10px;
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .locais{
+        width: 90%;
+        margin-left: 10%;
+        h3{
+            color: var(--tertiaryColor);
+            font-size: 14px;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--secondaryColor);
+            font-weight: 800;
+            padding-bottom: 4px;
+            position: relative;
+            width: 80%;
+            &::before{
+                content: "";
+                border-bottom: 2px solid var(--tertiaryColor);
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100px;
+            }
+        }
+        i{
+            font-size: 16px;
+            position: relative;
+            top: -2px;
+        }
+        p{
+            font-size: 14px;
+            color: var(--secondaryColor);
+            width: 380px;
+            margin-bottom: 10px;
+        }
+        ul{
+            display: inline-block;
+            margin: 10px 0 0 0;
+            padding: 0;
+            li{
+                color: var(--secondaryColor);
+                display: inline-block;
+                margin: 0;
+                padding: 0;
+                a{
+                    color: var(--secondaryColor);
+                    margin: 0 18px 0 0;
+                    padding: 0;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .entre{
+        color: #2CBE48;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-top: 40px;
+        position: relative;
+        z-index: 1;
+        &::after{
+            content: "";
+            border-radius: 3px;
+            border: 1px solid #404040;
+            background: #2C2C2C;
+            display: inline-block;
+            position: absolute;
+            top: -14px;
+            right: 10px;
+            height: 80px;
+            width: 600px;
+            z-index: -1;
+        }
+        h6{
+            margin-top: 0;
+            color: #828282;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+}
+.copy{
+    background: #2C2C2C;
+    padding: 12px 0 10px;
+    text-align: center;
+    color: var(--secondaryColor);
+    font-size: 14px;
+    line-height: 40px;
+    a{
+        float: right;
+    }
+}
+
+
+.flut-atendimento {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: 60px;
+	height: 60px;
+	z-index: 99;
+}
+
+.WhatsAppFlutuante{
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--whiteColor);
+    background: #2CBE48;
+    text-align: center;
+    font-size: 30px;
+    animation: pulse2 2s infinite;
+	box-shadow: 0 0 0 rgb(21 232 134 / 80%);
+}
+
+@keyframes pulse2 {
+	0% {
+		box-shadow: 0 0 0 0 rgba(21, 232, 134, 0.6);
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgba(21, 232, 134, 0.2);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(21, 232, 134, 0.2);
+	}
+}
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    footer {
+        padding: 60px 20px;
+        text-align: center;
+        img.logo {
+            margin-bottom: 20px;
+        }
+        .locais {
+            width: 100%;
+            margin-left: 0;
+            h3{
+                width: 100%;
+                margin-bottom: 20px;
+                border-bottom: 2px solid #2a2a2a;
+                &::before {
+                    left: 50%;
+                    width: 140px;
+                    margin-left: -70px;
+                }
+            }
+            ul {
+                li {
+                    a {
+                        margin: 0 10px 0 10px;
+                        padding: 0;
+                        font-size: 23px;
+                    }
+                }
+            }
+            p{
+                width: 100%;
+            }
+        }
+        nav{
+            ul{
+                text-align: center !important;
+                padding: 0;
+            }
+        }
+        .sitemap{
+            text-align: center;
+            h3{
+                width: 100%;
+                margin-bottom: 20px;
+                margin-top: 40px;
+                border-bottom: 2px solid #2a2a2a;
+                text-align: center;
+                &::before {
+                    left: 50%;
+                    width: 140px;
+                    margin-left: -70px;
+                    border-color: var(--tertiaryColor);
+                }
+            }
+        }
+        .entre {
+            h6 {
+                margin-bottom: 60px;
+            }
+            &::after {
+                top: -14px;
+                right: 0;
+                height: 80px;
+                width: 100%;
+            }
+        }
+    }
+    .copy{
+        span {
+            font-size: 12px;
+        }
+    }
+    .WhatsAppFlutuante{
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+    }
+    .flut-atendimento {
+        bottom: 0px;
+        right: 0px;
+        width: 60px;
+        height: 60px;
+        z-index: 99;
+    }
+}
+
+

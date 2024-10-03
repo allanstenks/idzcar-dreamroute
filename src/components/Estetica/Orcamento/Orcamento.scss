@@ -1,0 +1,84 @@
+// Conceito
+
+.Orcamento{
+    height: 600px;
+    background: url(./img/bgOrcamento.webp) no-repeat top right / contain;
+    .boxOrcamento{
+        min-height: 600px;
+        display: table;
+        position: relative;
+        .textConceito{
+            display: table-cell;
+            vertical-align: middle;
+            min-height: 600px;
+            position: relative;
+            h4{
+                color: #ABABAB;
+                font-size: 13.081px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: normal;
+                letter-spacing: 0.785px;
+                text-transform: uppercase;    
+            }
+            h2{
+                color: #272727;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 1.8px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                width: 90%;
+            }
+            p{
+                color: #8F8A8A;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 142.3%; /* 18.499px */
+                letter-spacing: 0.78px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+    img{
+        width: 90%;
+        float: left;
+        margin-top: 160px;
+    }
+}
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .Orcamento {
+        height: inherit;
+        padding: 80px 20px;
+        height: 540px;
+        background-position: bottom center;
+        .boxOrcamento {
+            min-height: inherit;
+            .textConceito{
+                text-align: center;
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

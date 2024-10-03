@@ -1,0 +1,97 @@
+// SobreBanner
+
+.SobreBanner{
+    height: 700px;
+    padding-top: 120px;
+    &::before{
+        content: "SOBRE NÓS";
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--whiteColor);
+        text-transform: uppercase;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 76px;
+        position: absolute;
+        left: -150px;
+        top: 350px;
+        font-weight: 900;
+        transform: rotate(270deg);
+        opacity: 0.2;
+    }
+    .boxSobreBanner{
+        min-height: 600px;
+        display: table;
+        position: relative;
+        .textSobreBanner{
+            display: table-cell;
+            vertical-align: middle;
+            min-height: 600px;
+            position: relative;
+            text-align: left;
+            h3{
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: var(--whiteColor);
+                font-weight: 900;
+                text-transform: uppercase;
+                font-size: 38px;
+                color: transparent;
+                line-height: 40px;
+            }
+            h2{
+                font-size: 50px;
+                font-weight: 900;
+                color: var(--whiteColor);
+                text-transform: uppercase;
+                line-height: 60px;
+            }
+            .btn.btn-down {
+                margin: 20px 0 40px;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .SobreBanner{
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 540px;
+        background: #272727 url(./img/bgSobreMobile.webp) no-repeat center / cover !important;
+        &::before{
+            display: none;
+        }
+        .boxSobreBanner {
+            min-height: 330px;
+            .textSobreBanner {
+                padding-bottom: 30px;
+                h3 {
+                    font-size: 24px;
+                }
+                h2 {
+                    font-size: 25px;
+                    line-height: 36px;
+                    width: 70%;
+                    br{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

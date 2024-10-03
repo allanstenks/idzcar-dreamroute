@@ -1,0 +1,77 @@
+// Marcas
+
+.marcas{
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    .itemMarcas{
+        border-radius: 9.255px;
+        border: 0.771px solid #686868;
+        background: linear-gradient(180deg, #000 0%, #2F2F2F 100%);
+        height: 140px;
+        text-align: center;
+        img{
+            filter: grayscale(100%);
+            display: inline-block;
+        }
+    }
+    .titilos {
+        padding-left: 15px;
+    }
+    .sliderMarcas{
+        padding:  0;
+    }
+    .slick-slider{
+        .slick-slide{
+            padding: 10px;
+        }
+    }
+    .slick-arrow{
+        display: none !important;
+    }
+    .slick-dots {
+        text-align: right;
+        padding-right: 5px;
+        li{
+            padding: 0;
+            margin: 0;
+            button{
+                background: #CDCDCD;
+                border-radius: 60px;
+                width: 15px;
+                height: 15px;
+                margin-left: 3px;
+                &::before{
+                    display: none;
+                }
+            }
+            &.slick-active{
+                button{
+                    background: #9B9A9A;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+
+}
+@media (max-width: 768px) {
+    .marcas {
+        padding: 80px 20px;
+        .slick-dots {
+            text-align: center;
+        }
+    }
+}

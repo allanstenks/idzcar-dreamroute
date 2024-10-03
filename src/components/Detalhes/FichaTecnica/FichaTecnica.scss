@@ -1,0 +1,159 @@
+.diferenciaisVeiculo{
+    background: linear-gradient(270deg, rgba(238, 238, 238, 0.00) -4.18%, rgba(238, 238, 238, 0.87) 100.9%);
+    padding: 80px 0;
+    position: relative;
+
+    h3{
+        color: #000;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 42px;
+        letter-spacing: 0.56px;
+        text-transform: uppercase;
+    }
+    .slickFoto{
+        width: 100%;
+        margin-top: 40px;
+        .foto{
+            height: 320px;
+        }
+        .diferenciaisImg{
+            height: 340px;
+            background: var(--secondaryColor);
+        }
+        .slick-arrow{
+            display: none !important;
+        }
+    }
+    .slickDesc{
+        margin-top: 40px;
+        position: relative;
+        height: 300px;
+        padding: 0 10%;
+        .slick-list{
+            p{
+                overflow-y: auto;
+                height: 140px;
+                &::-webkit-scrollbar {
+                    width: 6px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: var(--tertiaryColor);
+                    border-radius: 5px;
+                }
+                &::-webkit-scrollbar-track {
+                    background-color: #f1f1f1;
+                }
+            }
+        }
+        span{
+            color: var(--tertiaryColor);
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 30px;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            padding-top: 0px;
+            padding-bottom: 18px;
+            display: inline-block;
+        }
+        h3{
+            color: #35363A;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 112.3%; /* 24.706px */
+            letter-spacing: 1.32px;
+            text-transform: uppercase;
+        }
+        .slick-slider{
+            height: 300px;
+        }
+        .slick-prev{
+            border: 1px solid #D0D0D0;
+            width: 52px;
+            height: 52px;
+            z-index: 1;
+            background: #FFF url(../../../pages/Detalhes/img/icon-prev.svg) no-repeat center;
+            position: absolute;
+            left: 0px;
+            top: initial;
+            bottom: -10px;
+            color: #D0D0D0;
+            text-align: center;
+            line-height: 48px;
+            transition: all ease-in 0.2s;
+            font-size: 12px;
+            overflow: hidden;
+            text-indent: -100px;
+            &:hover{
+                background: #F5F5F5 url(../../../pages/Detalhes/img/icon-prev.svg) no-repeat center;
+                cursor: pointer;
+            }
+            &::before{
+                display: none;
+            }
+        }
+        .slick-next{
+            border: 1px solid #D0D0D0;
+            width: 52px;
+            height: 52px;
+            z-index: 1;
+            background: #FFF url(../../../pages/Detalhes/img/icon-next.svg) no-repeat center;
+            position: absolute;
+            left: 50px;
+            top: initial;
+            bottom: -10px;
+            color: #D0D0D0;
+            text-align: center;
+            line-height: 48px;
+            transition: all ease-in 0.2s;
+            font-size: 12px;
+            overflow: hidden;
+            text-indent: -100px;
+            &:hover{
+                background: #F5F5F5 url(../../../pages/Detalhes/img/icon-next.svg) no-repeat center;
+                cursor: pointer;
+            }
+            &::before{
+                display: none;
+            }
+        }
+    }
+
+}
+
+// Diferenciais
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+}
+
+@media(min-width: 1024px) and (max-width: 1280px) {
+}
+@media (max-width: 768px) {
+    .diferenciaisVeiculo{
+        padding: 80px 20px !important;
+        &::before{
+            display: none;
+        }
+        .slickFoto {
+            margin-top: 20px !important;
+        }
+    }
+    .slickDesc {
+        padding: 0 !important;
+        height: auto;
+    }
+    .fichatecnicaVeiculo {
+        ul {
+            li {
+                width: 100%;
+            }
+        }
+    }
+}

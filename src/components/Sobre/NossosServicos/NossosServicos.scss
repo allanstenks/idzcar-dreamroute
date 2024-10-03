@@ -1,0 +1,307 @@
+
+// nossosServicos
+
+.nossosServicosSobre{
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    h3{
+        color: #35363A;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.78px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h2{
+        color: #ABABAB;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 1.68px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    p{
+        color: #8F8A8A;
+        text-align: center;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.78px;
+        margin-bottom: 40px;
+    }
+    .itemNossosServicos{
+        text-align: center;
+        margin-bottom: 40px;
+        .foto{
+            width: 100%;
+            height: 212px;
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            transition: all ease-in 0.2s;
+            width: 390px;
+            margin-left: -60px;
+            &.fotoFunilaria{
+                .rodaTraseira{
+                    left: 59px;
+                    top: 118px;
+                    background: url(./img/imgFunalizariarRoda1.webp) no-repeat center / cover;
+                    position: absolute;
+                    width: 54px;
+                    height: 54px;
+                    z-index: 2;
+                    transition: all ease-in 0.2s;
+                }
+                .rodaFrente{
+                    right: 62px;
+                    top: 118px;
+                    background: url(./img/imgFunalizariarRoda2.webp) no-repeat center / cover;
+                    position: absolute;
+                    width: 54px;
+                    height: 54px;
+                    z-index: 2;
+                    transition: all ease-in 0.2s;
+                }
+            }
+            &.fotoBlindagem{
+                .rodaTraseira{
+                    left: 46px;
+                    top: 117px;               
+                    background: url(./img/imgBlindagemRoda1.webp) no-repeat center / cover;
+                    position: absolute;
+                    width: 54px;
+                    height: 54px;
+                    z-index: 2;
+                    transition: all ease-in 0.2s;
+                }
+                .rodaFrente{
+                    right: 49px;
+                    top: 116px;
+                    background: url(./img/imgBlindagemRoda2.webp) no-repeat center / cover;
+                    position: absolute;
+                    width: 54px;
+                    height: 54px;
+                    z-index: 2;
+                    transition: all ease-in 0.2s;
+                }
+            }
+            &.fotoEstetica{
+                .rodaTraseira{
+                    left: 52px;
+                    top: 121px;
+                    background: url(./img/imgEsteticaRoda1.webp) no-repeat center / cover;
+                    position: absolute;
+                    width: 54px;
+                    height: 54px;
+                    z-index: 2;
+                    transition: all ease-in 0.2s;
+                }
+                .rodaFrente{
+                    right: 44px;
+                    top: 121px;
+                    background: url(./img/imgEsteticaRoda2.webp) no-repeat center / cover;
+                    position: absolute;
+                    width: 54px;
+                    height: 54px;
+                    z-index: 2;
+                    transition: all ease-in 0.2s;
+                }
+            }
+            &.fotoVendas{
+                .rodaTraseira{
+                    left: 64px;
+                    top: 117px;
+                    background: url(./img/imgVendaRoda1.webp) no-repeat center / cover;
+                    position: absolute;
+                    width: 54px;
+                    height: 54px;
+                    z-index: 2;
+                    transition: all ease-in 0.2s;
+                }
+                .rodaFrente{
+                    right: 59px;
+                    top: 119px;
+                    background: url(./img/imgVendaRoda2.webp) no-repeat center / cover;
+                    position: absolute;
+                    width: 54px;
+                    height: 54px;
+                    z-index: 2;
+                    transition: all ease-in 0.2s;
+                }
+            }
+            img{
+                position: relative;
+                z-index: 1;
+                width: 100%;                
+            }
+            h3{
+                text-transform: uppercase;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 60px;
+                font-weight: 900;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgba(45, 25, 25, 0.366);
+                color: transparent;
+                position: absolute;
+                top: 0;
+                left: 30px;
+                width: 100%;
+                text-align: center;
+                transition: all ease-in 0.2s;
+            }
+
+        }
+        .desc{
+            border: 1px solid #D7D7D7;  
+            background: #EEE;
+            border-radius: 4px;
+            margin-top: -80px;
+            display: inline-block;
+            width: 100%;
+            padding: 100px 40px 40px;
+            position: relative;
+            transition: all ease-in 0.2s;
+            &::before{
+                content: "";
+                background: #272727;
+                height: 120px;
+                width: 10px;
+                position: absolute;
+                top: 100px;
+                left: -10px;
+            }
+            .servico{
+                width: 100%;
+                .textServico{
+                    h6{
+                        color: var(--secondaryTextColor);
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        text-align: left;
+                    }
+                    h5{
+                        color: var(--primaryTextColor);
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        height: 30px;
+                        text-align: left;
+                    }
+                    p{
+                        color: #8F8A8A;
+                        font-size: 13px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 18px;
+                        letter-spacing: 0.78px;
+                        text-align: left;
+                        height: 70px;
+                    }
+                }
+            }
+            .btn{
+                float: right;
+            }
+        }
+        &:hover{
+            .desc{
+                background: var(--tertiaryColor);
+                h6{
+                    color: var(--primaryColor) !important;
+                }
+                h5{
+                    color: var(--whiteColor) !important;
+                }
+                p{
+                    color: var(--whiteColor) !important;
+                }
+            }
+            .btn{
+                background: var(--primaryColor);
+                border-color: var(--primaryColor) !important;
+                color: var(--whiteColor) !important;
+            }
+            .foto{
+                margin-left: 60px;
+                .rodaTraseira{
+                    transform: rotate(40deg);
+                }
+                .rodaFrente{
+                    transform: rotate(40deg);
+                }
+                h3{
+                    -webkit-text-stroke-color: var(--tertiaryColor);
+                }
+            }
+            h3{
+                left: -60px !important;
+            }
+        }
+    }
+    &::before{
+        content: "Seviços";
+        text-transform: uppercase;
+        background: linear-gradient(90deg, rgba(217,217,217,0.60) 0%, rgba(217,217,217,0.3) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 76px;
+        position: absolute;
+        right: -80px;
+        top: 320px;
+        font-weight: 900;
+        transform: rotate(270deg);
+    }
+}
+
+@media(min-width: 1621px) and (max-width: 1800px) {
+
+}
+
+@media(min-width: 1024px) and (max-width: 1620px) {
+ 
+
+}
+
+@media(min-width: 1024px) and (max-width: 1380px) {
+    .nossosServicosSobre {
+        padding: 80px 0 40px;
+    }
+}
+@media (max-width: 768px) {
+    .nossosServicosSobre {
+        &::before{
+            display: none;
+        }
+        padding: 80px 30px;
+        .itemNossosServicos {
+            .desc {
+                padding: 70px 20px 20px;
+                .servico {
+                    .textServico {
+                        p {
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .foto{
+                h3{
+                    top: -7px;
+                    font-size: 48px;
+                }
+            }
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+

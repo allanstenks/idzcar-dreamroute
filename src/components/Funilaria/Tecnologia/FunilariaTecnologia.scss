@@ -1,0 +1,93 @@
+// Tecnologia
+
+.FunilariaTecnologia{
+    padding: 120px 0;
+    height: auto;
+    h2{
+        color: #272727;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-transform: uppercase;  
+        margin-bottom: 40px;
+    }
+    h4{
+        color: #ABABAB;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        letter-spacing: 0.78px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .slick-arrow{
+        display: none !important;
+    }
+    .controlSlider{
+        position: relative;
+        a.nextSlider {
+            border: 1px solid #D0D0D0;
+            width: 52px;
+            height: 52px;
+            z-index: 1;
+            background: #FFF;
+            position: absolute;
+            right: 21px;
+            bottom: -60px;
+            color: #D0D0D0;
+            text-align: center;
+            line-height: 48px;
+            transition: all ease-in 0.2s;
+            font-size: 12px;
+            &:hover{
+                background: #F5F5F5;
+                cursor: pointer;
+            }
+        }
+        a.prevSlider {
+            border: 1px solid #D0D0D0;
+            width: 52px;
+            height: 52px;
+            z-index: 1;
+            background: #FFF;
+            position: absolute;
+            right: 72px;
+            bottom: -60px;
+            color: #D0D0D0;
+            text-align: center;
+            line-height: 48px;
+            transition: all ease-in 0.2s;
+            font-size: 12px;
+            &:hover{
+                background: #F5F5F5;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .itemTecnologia{
+        padding: 10px;
+        .imgTecnologia{
+            height: 300px;
+            width: 100%;
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .FunilariaTecnologia {
+        padding: 60px 0 120px 0;
+        height: auto;
+        position: relative;
+        top: -1px;
+        h2 {
+            font-size: 22px;
+        }
+    }
+}
+
