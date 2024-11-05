@@ -84,7 +84,7 @@ function Detalhes() {
         <>
             <Helmet>
                 <title>
-                    1021 Motors | {titulo}
+                    Dream Route | {titulo}
                 </title>
                 <meta name='description' content={veiculo?.seo?.description != '' ? veiculo?.seo?.description : veiculo?.detalhes?.chamada}></meta>
                 <meta name="keywords" content={veiculo?.seo?.palavras_chave} />

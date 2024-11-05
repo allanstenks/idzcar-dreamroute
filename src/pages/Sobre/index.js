@@ -11,9 +11,7 @@ import Banner from "../../components/Sobre/Banner";
 import Footer from "../../components/Home/Footer";
 import Menu from "../../components/Home/Menu";
 import Conheca from "../../components/Sobre/Conheca";
-import Apaixonados from "../../components/Sobre/Apaixonados";
-import NossosServicos from "../../components/Sobre/NossosServicos";
-import Transforme from "../../components/Sobre/Transforme";
+import Video from "../../components/Home/Video";
 
 
 
@@ -40,10 +38,8 @@ function Sobre() {
             <Menu />
             <Header />
             <Banner />
-            {/*  <Conheca /> */}
-            {/*  <Apaixonados /> */}
-            {/* <NossosServicos /> */}
-            {/* <Transforme /> */}
+            <Conheca />
+            <Video />
             <Footer />
         </>
 

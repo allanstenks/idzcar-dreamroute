@@ -107,6 +107,7 @@ function FormVenda() {
         try {
             const response = await api.post('/api/vendaseucarro', data);
             if (response) {
+                console.log("response");
                 setShowSuccessModal(true);
             }
             
@@ -131,7 +132,7 @@ function FormVenda() {
                         <div className='formVendaForm'>
                             <Row>
                                 <Col xs={12} sm={12} md={12} lg={12}>
-                                    <Form>
+                                    <div>
                                         <Row>
                                             <Col xs={12} sm={12} md={12} lg={12}>
                                                 <h3>Descreva abaixo as características do veículo</h3>
@@ -281,13 +282,13 @@ function FormVenda() {
                                             </Col>
                                             <Col xs={12} sm={12} md={12} lg={12}>
                                                 <Form.Group className="text-center">
-                                                    <Button variant="secondary" className="Btns ButtonLight" type="button" sonSubmit={handleSubmit}>
+                                                    <Button variant="secondary" className="Btns ButtonLight" type="button" onClick={handleSubmit}>
                                                         Enviar veículo
                                                     </Button>
                                                 </Form.Group>
                                             </Col>
                                         </Row>
-                                    </Form>
+                                    </div>
                                 </Col>
                             </Row>
                         </div>

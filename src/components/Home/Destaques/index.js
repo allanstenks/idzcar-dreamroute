@@ -90,7 +90,7 @@ function Destaques() {
                                                                     idzEvent("paginas_acessadas", `/detalhe/${destaque.seo_url}`)
                                                                     navigate(`/detalhe/${destaque.seo_url}`)
                                                                 }}>
-                                                                <div className="foto" style={{ background: `url(${api.defaults.baseURL}${destaque.imagem}) no-repeat center` }}>
+                                                                <div className="foto" style={{ background: `#FFFFFF url(${api.defaults.baseURL}${destaque.imagem}) no-repeat center` }}>
                                                                     {destaque.blindado === 1 && <span>Blindados</span>}
                                                                     {parseInt(destaque.km.toString().replace('.', '')) < 10000 && (
                                                                         <span className='baixo'>
@@ -99,18 +99,21 @@ function Destaques() {
                                                                     )}
                                                                 </div>
                                                                 <div className="desc">
-                                                                    <div className='modelo'>
-                                                                        <h3>{destaque.titulo}<span> {destaque.ano_modelo} / {destaque.ano_fabricacao}</span></h3>
-                                                                        <div className='marca' style={{ background: `url(${api.defaults.baseURL}${destaque.logomarca}) no-repeat center / contain` }}></div>
-                                                                    </div>
                                                                     <div className='galeria'>
                                                                         <ul>
                                                                             {destaque.imagens.slice(0, 3).map((img, i) => (
-                                                                                <li key={i}><img src={`${api.defaults.baseURL}/${img.imagem}`} /></li>
+                                                                                <li key={i} style={{ background: `url(${api.defaults.baseURL}/${img.imagem}) no-repeat center / cover` }}></li>
                                                                             ))}
                                                                         </ul>
                                                                     </div>
-                                                                    <div className="btn btn-plus"><Icon className="icons" icon="basil:arrow-up-outline" /></div>
+                                                                    <div className='modelo'>
+                                                                        <h3><span> {destaque.ano_modelo} / {destaque.ano_fabricacao}</span>{destaque.titulo}</h3>
+                                                                    </div>
+                                                                    <div className='valor'>
+                                                                        <h4>{destaque.preco}</h4>
+                                                                        <div className='acao'><div className="btn btn-plus"><Icon className="icons" icon="basil:arrow-up-outline" /></div></div>
+                                                                    </div>
+                                                                    
                                                                 </div>
                                                             </div>
                                                         </div>

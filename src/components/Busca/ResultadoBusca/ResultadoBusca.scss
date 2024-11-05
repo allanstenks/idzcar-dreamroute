@@ -85,7 +85,9 @@
                 width: 120px;
                 height: 119px;
                 line-height: 100px;
-                font-size: 30px !important;
+                svg{
+                    font-size: 30px;
+                }
                 border-radius: 0 5px 5px 0 !important;
                 &:hover{
                     background: var(--primaryTextColor);
@@ -473,7 +475,7 @@ ul.p-dropdown-items {
         position: relative;
         background: linear-gradient(180deg, #2F2F2F -6.87%, #2C2C2C 100%);
         .tipos {
-            display: flex;
+            display: none;
             
             li {
                 flex-grow: 3;
@@ -532,14 +534,17 @@ ul.p-dropdown-items {
             }
             .btn.btn-icon:not(.maisFiltros) {
                 background: var(--tertiaryColor);
-                width: 45%;
-                min-width: 165px;
+                width: 35% !important;
+                min-width: 110px;
                 text-align: center;
                 display: flex;
                 justify-content: center;
+                line-height: 40px;
+                height: 65px;
+                border-radius: 5px !important;
                 &::before{
                     content: "BUSCAR";
-                    font-size: 16px;
+                    font-size: 14px;
                     margin-top: 4px;
                     order: 2;
                 }
@@ -548,11 +553,14 @@ ul.p-dropdown-items {
                     margin-top: 4px;
                     margin-right: 6px;
                     position: relative;
-                    top: 1px;
+                    top: 9px;
+                    font-size: 22px;
+                    display: none;
                 }
             }
             .buscaBtn{
                 display: flex;
+                position: relative;
                 .maisFiltros {
                     display: inline-block !important;
                     background: none !important;
@@ -569,6 +577,16 @@ ul.p-dropdown-items {
                         position: relative;
                         top: -1px;
                     }
+                }
+                .btn-icon {
+                    font-size: 13px !important;
+                }
+            }
+            .maisFiltros{
+                line-height: 40px !important;
+                height: 65px;
+                svg{
+                    font-size: 22px !important;
                 }
             }
 

@@ -4,10 +4,10 @@
     .color{
         min-height: 400px;
         display: table;
-        padding: 80px 20px 20px 0;
+        padding: 20px 20px 20px 0;
         margin-top: -140px;
         &.segundo{
-            padding: 80px 0 20px 20px; 
+            padding: 20px 0 20px 20px; 
         }
         h2{
             color: #000000;
@@ -60,7 +60,7 @@
         }
         .boxColor{
             display: table-cell;
-            vertical-align: middle;
+            //vertical-align: middle;
             min-height: 400px;
             background: var(--whiteColor);
             padding: 40px 60px;
@@ -202,6 +202,11 @@
              .boxColor {
                 border-radius: 0;
                 padding: 40px 30px;
+                ul{
+                    li{
+                        width: 100%;
+                    }
+                }
             }
             p{
                 font-size: 14px;

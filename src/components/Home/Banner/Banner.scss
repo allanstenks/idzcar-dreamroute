@@ -1,10 +1,11 @@
 // Numeros
 
 .Banner{
-    height: 700px;
+    height: 710px;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    margin-top: -120px;
     .container-fluid{
         padding: 0;
     }
@@ -20,10 +21,10 @@
     }
     .row{
         position: relative;
-        height: 560px;
+        height: 810px;
     }
     .imgBanner {
-        height: 560px;
+        height: 810px;
         span{
             background: rgb(48,189,68);
             background: linear-gradient(90deg, rgba(191,191,191,0.3) 55%, rgba(255,255,255,0.7) 90%);
@@ -175,11 +176,10 @@
         position: absolute;
         left: 50%;
         margin-left: -660px;
-        top: 560px;
+        top: 590px;
         display: flex;
         transition: all ease-in 0.2s;
         opacity: 0;
-        box-shadow: 4px -2px 13px -2px rgba(34,34,34,0.36);
         .descVideo{
             display: flex;
             justify-content: space-between;
@@ -248,7 +248,7 @@
             padding: 16px 24px;
             display: flex;
             width: calc(100% + 1px);
-            width: 60%;
+            width: 50%;
             color: var(--whiteColor);
             .incluso{
                 width: 50%;
@@ -274,6 +274,7 @@
                     text-transform: uppercase;
                     margin-top: 16px;
                     display: inline-block;
+                    margin-top: 0;
                 }
                 h3{
                     color: #272727;
@@ -296,23 +297,23 @@
             cursor: pointer;
         }
         &.tipo2{
+            margin-top: -100px;
             overflow: hidden;
             .chamadaBanner{
                 background: var(--whiteColor);
                 width: 50%;
-                height: 560px;
+                height: 810px;
                 float: left;
-                
                 .textoBanner{
                     width: 660px;
                     float: right;
-                    min-height: 490px;
+                    min-height: 810px;
                     display: table;
                     position: relative;
                     .alignBanner{
                         display: table-cell;
                         vertical-align: middle;
-                        min-height: 560px;
+                        min-height: 810px;
                         position: relative;
                         h3{
                             color: var(--primaryTextColor);
@@ -346,6 +347,7 @@
                             font-size: 14px;
                             width: auto;
                             margin-bottom: 0px;
+                            margin-top: 80px;
                         }
                         p{
                             color: #FFF;
@@ -393,31 +395,36 @@
  
             }
             .imgBanner{
-                height: 560px;
+                height: 810px;
                 width: 50%;
                 float: left;
-                background: linear-gradient(113deg, #D9D9D9 4.56%, #737373 114.55%);
+                background: linear-gradient(180deg, #141414 0%, #2F2F2F 100%);
                 span{
                     color: rgba(236, 236, 236, 0.29);
-                    font-size: 100px;
+                    font-size: 142px;
                     font-style: normal;
                     font-weight: 700;
                     line-height: 82px;
                     letter-spacing: 0;
                     text-transform: uppercase;
                     width: 100%;
-                    border: none;
                     background: none;
                     opacity: 0.7;
                     padding-top: 60px;
                     text-align: left;
-                    padding-left: 7%;
+                    padding-left: 14%;
+                    border: none;
+                    -webkit-text-stroke: 1px rgba(180, 180, 180, 0.6);
+                    color: transparent;
+                    bottom: 130px;
+                    position: absolute;
+                    top: inherit;
                 }
                 img{
                     position: absolute;
                     width: 900px;
-                    margin-left: -100px;
-                    margin-top: 100px;
+                    margin-left: -200px;
+                    bottom: 100px;
                 }
             }
             .descBanner{
@@ -437,9 +444,22 @@
                 .inclusoPreco{
                     display: flex;
                     justify-content: space-between;
-                    background: none;
+                    position: relative;
+                    background: #DBDBDB;
+                    align-items: center;
+                    position: relative;
+                    &:before{
+                        background: #DBDBDB;
+                        content: "";
+                        left: -100%;
+                        top: 0;
+                        height: 100%;
+                        position: absolute;
+                        z-index: 1;
+                        width: 100%;
+                    }
                     span{
-                        color: #272727;
+                        color: #7B7B7B;
                         font-size: 12px;
                         font-style: normal;
                         font-weight: 800;
@@ -448,22 +468,23 @@
                         text-transform: uppercase;
                     }
                     .km, .ano, .preco {
-                        padding:20px 40px  0 40px;
+                        padding: 0px 40px 0 40px;
                         list-style: none;
                         margin: 0;
                         font-size: 20px;
                         font-weight: bold;
-                        border-left: 1px solid #4D4D4D;
+                        border-left: 1px solid #FFF;
                         li{
                             line-height: 16px;
+                            color: var(--primaryTextColor);
                         }
                         span{
-                            color: var(--tertiaryColor);
+                            color: #7B7B7B;
                             font-size: 12px;
                             text-transform: uppercase;
                             display: inline-block;
                             width: 100%;
-                            margin-top: 10px;
+                            margin-bottom: 2px;
                         }
                         h3{
                             color: #272727;
@@ -691,11 +712,14 @@
 
 @media (max-width: 768px) {
     .Banner{
-        height: 470px;
+        height: 564px;
+        .slick-arrow{
+            display: none !important;
+        }
         .itemBanner{
-            height: 490px;
+            height: 680px;
             .imgBanner {
-                height: 373px;
+                position: relative;
                 .saiba{
                     display: none;
                 }
@@ -707,16 +731,49 @@
                 
             }
             &.tipo2 {
+                
                 .chamadaBanner {
-                    display: none;
+                    height: 455px;
+                    width: 100%;
+                    .textoBanner{
+                        height: 390px;
+                        min-height: inherit;
+                        width: 100%;
+                        padding: 50px 20px 0;
+                        .alignBanner{
+                            a:not(.link){
+                                display: none;
+                            }
+                            .link{
+                                padding: 3px 20px 3px 20px !important;
+                                font-size: 16px;
+                            }
+                            h5{
+                               display: none;
+                            }
+                            h3{
+                                margin-top: 180px;
+                                font-size: 16px;
+                                line-height: 13px;
+                            }
+                        }
+                        h2{
+                            color: var(--primaryTextColor);
+                            font-size: 28px !important;
+                            width: 80%;
+                            line-height: 28px !important;
+                        }
+                    }
                 }
                 .imgBanner {
-                    height: 310px;
+                    height: 160px;
                     width: 100%;
+                    background: none;
                     img {
                         width: 100%;
                         margin-left: 0;
-                        margin-top: 120px;
+                        margin-top: 0;
+                        bottom: 50px;
                         
                     }
                     span {
@@ -724,18 +781,24 @@
                         line-height: 47px;
                         width: 100%;
                         text-align: left;
-                        left: 10%;
+                        left: 0;
                         padding-left: 0;
                         margin: 0;
-                        top: -20px;
+                        top: -7px;
+                        text-align: right;
                     }
                 }
                 .descBanner {
+                    bottom: 0;
+                    top: inherit;
                     .inclusoPreco {
                         padding: 29px 10px;
                         .preco, .km, .ano {
                             padding: 0 10px;
                             font-size: 16px;
+                            li{
+                                width: 100%;
+                            }
                         }
                     }
                     .marca {
@@ -822,7 +885,7 @@
 
         .descBanner {
             width: 100%;
-            top: 310px;
+            top: 400px;
             left: 0;
             margin-left: 0;
             display: inline-block;

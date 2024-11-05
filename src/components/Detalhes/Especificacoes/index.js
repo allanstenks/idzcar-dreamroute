@@ -29,35 +29,46 @@ const Especificacoes = ({  opcionais = [], destaques, detalhesEspecificacoes = [
   return (
     <>
       <section className='especificacoesVeiculo'>
-        <Container>
-            <Row className='justify-content-md-center'>
-              {console.log("opcionais: " , Array.isArray(destaques))}
-                <Col xs={12} sm={12} md={12} lg={opcionais.length > 1 || Array.isArray(destaques) === true ? 6 : 7} className='color'>
-                    <div className='boxColor'>
-                        <h2>Descrição</h2>
-                        <p>{detalhesEspecificacoes.descricao}</p>
-                    </div>
-                </Col>
-                {opcionais.length > 1 ||  Array.isArray(destaques) === true ? 
+    <Container>
+        <Row className='justify-content-md-center'>
+            {console.log("opcionais: ", Array.isArray(destaques))}
+            <Col 
+                xs={12} 
+                sm={12} 
+                md={12} 
+                lg={(opcionais.length > 0 || (Array.isArray(destaques) && destaques.length > 0)) ? 6 : 12} 
+                className='color'
+                style={{
+                    minHeight: (opcionais.length === 0 && (!Array.isArray(destaques) || destaques.length === 0)) ? 'auto' : 'inherit'
+                }}
+            >
+                <div className='boxColor'>
+                    <h2>Descrição</h2>
+                    <p>{detalhesEspecificacoes.descricao}</p>
+                </div>
+            </Col>
+            {(opcionais.length > 0 || (Array.isArray(destaques) && destaques.length > 0)) ? (
                 <Col xs={12} sm={12} md={12} lg={6} className='color segundo'>
                     <div className='boxColor'>
-                      <h2>diferenciais</h2>
-                        {mostrarOpcionais && (<>
-                        <ul>
-                          {opcionais.map((item, index) => (
-                              <li key={index}><span>{item}</span></li>
-                            ))}
-                          {Array.isArray(destaques) && destaques.map((item, index) => (
-                              <li key={index}><span>{item}</span></li>
-                          ))}
-                        </ul>
-                        </>)}
+                        <h2>Diferenciais</h2>
+                        {mostrarOpcionais && (
+                            <ul>
+                                {opcionais.map((item, index) => (
+                                    <li key={index}><span>{item}</span></li>
+                                ))}
+                                {Array.isArray(destaques) && destaques.map((item, index) => (
+                                    <li key={index}><span>{item}</span></li>
+                                ))}
+                            </ul>
+                        )}
                     </div>
                 </Col>
-              : null }
-            </Row>
-        </Container>
-    </section>
+            ) : null}
+        </Row>
+    </Container>
+</section>
+
+
     </>
   );
 };

@@ -1,25 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Col, Container, Row } from "react-bootstrap";
-import { Link } from 'react-router-dom';
-import { Icon } from '@iconify/react';
 
 // Style
-import './FaleConosco.scss';
-import 'react-tooltip/dist/react-tooltip.css'
+import './SobreBanner.scss';
 
-function FaleConosco() {
+function SobreBanner() {
 
     return (
         <>
-            <section className='FaleConosco'>
+            <section className='SobreBanner'>
                 <Container>
                     <Row className='justify-content-md-center'>
-                        <Col xs={12} sm={12} md={12} lg={8} className='boxFaleConosco'>
-                            <div className='textFaleConosco'>
-                                <h3>ENTRE</h3>
-                                <h2>EM CONTATO</h2>
-                                <p>Ficou com alguma dúvida? Entre em contato</p>
-                            </div>
+                        <Col xs={12} sm={12} md={12} lg={6}>
+                            <h2 className='titilos'><i></i> <br />Entre em  <strong>Contato</strong> </h2>
                         </Col>
                     </Row>
                 </Container>
@@ -29,4 +22,4 @@ function FaleConosco() {
     );
 }
 
-export default FaleConosco;
+export default SobreBanner;

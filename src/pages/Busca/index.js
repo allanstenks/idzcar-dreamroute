@@ -33,8 +33,8 @@ function Busca() {
 
     return (
         <>
-            <Menu />
-            <Header />
+            <Menu/>
+            <Header type="search" />
             <Banner />
             <ResultadoBusca />
             <Footer />

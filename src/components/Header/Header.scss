@@ -2,14 +2,43 @@
 
 header{
     padding: 0;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, #000 0%, #333 100%);
     margin-bottom: -120px;
     z-index: 10;
     height: 120px;
     position: relative;
-    &.light{
-      background: #FFFFFF;      
+    top: 30px;
+    .container{
+      background: var(--whiteColor);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 4px -2px 13px -2px rgba(34,34,34,0.36);
+      .row{
+        > div{
+          padding: 0;
+        }
+      }
+      .navbar {
+        padding: 0;
+        .navbar-brand{
+          background: var(--primaryColor) !important;
+          width: 180px;
+          height: 100px;
+          text-align: center;
+          line-height: 80px;
+          a{
+            color: var(--secondaryColor);
+          }
+          img{
+            width: 80px;
+          }
+        }
+      }
+
+    }
+    .btn-primary{
+      border: 1px solid var(--whiteColor) !important;
+    }
+    &.light{   
       margin-bottom: 0;
       nav{
         .navbar-nav{
@@ -20,8 +49,7 @@ header{
       }
       a.btnBusca {
         border: 1px solid var(--primaryTextColor);
-        background: none;
-        color: var(--primaryTextColor) !important;
+        color: var(--whiteColor) !important;
         &:hover{
           background: var(--primaryTextColor);
           color: var(--whiteColor) !important;
@@ -32,6 +60,23 @@ header{
         }
       }
     }
+    &.search{
+      .container{
+          background: none;
+          .navbar-brand{
+              background: none !important;
+          }
+          .btnBusca{
+            display: none;
+          }
+          .justify-content-center {
+            justify-content: right !important;
+            a {
+              color: var(--whiteColor);
+            }
+          }
+      }
+    }
     nav{
       background: none !important;
       .logo{
@@ -40,17 +85,35 @@ header{
         top: 0px;
       }
       .navbar-nav{
+        li{
+          position: relative;
+          &:hover, &.active{
+            color: var(--primaryColor);
+            &:before{
+              content: "";
+              background: url(../../../src/components/Home/Destaques/img/IconDestaque.svg) no-repeat center / cover;
+              width: 20px;
+              height: 16px;
+              display: inline-block;
+              position: absolute;
+              top: -21px;
+              left: 60%;
+              margin-left: -18px;
+            }
+            a{
+              color: var(--primaryColor);
+            }
+          }
+        }
         a{
-          color: var(--whiteColor);
+          color: var(--secondaryColor);
           text-decoration: none;
           padding: 0 14px;
-          font-size: 16px;
-          &:hover{
-            color: var(--tertiaryColor);
-          }
-          
+          font-size: 14px;
+          text-transform: uppercase;
+          position: relative;
+          font-weight: 600;
         }
-        
         .icons {
           color: var(--tertiaryColor);
           font-size: 20px;
@@ -65,22 +128,26 @@ header{
     }
     a.btnBusca {
       border: 1px solid var(--whiteColor);
-      border-radius: 60px;
+      border-radius: 0;
       padding: 8px 10px !important;
       color: var(--whiteColor) !important;
       margin-right: 20px;
       text-transform: uppercase;
       text-decoration: none;
       font-size: 14px;
+      line-height: 45px;
       position: relative;
       transition: all ease-in-out 0.2s;
       margin-left: 20px;
       background: var(--primaryTextColor);
+      width: 65px;
+      height: 65px;
+      display: inline-block;
+      text-align: center;
       svg{
         position: relative;
-        top: -2px;
         margin-left: 0;
-        font-size: 16px;
+        font-size: 24px;
         
       }
       &:hover{
@@ -92,7 +159,7 @@ header{
         }
       }
     }
-  }
+}
 
   @media(min-width: 1621px) and (max-width: 1800px) {
     
@@ -108,10 +175,25 @@ header{
     header{
       padding: 20px;
       height: 100px;
+      top: 15px;
+      .container {
+        border-radius: 0px;
+        .navbar {
+          .navbar-brand {
+            width: 100px;
+            height: 60px;
+            line-height: 50px;
+            img {
+              width: 40px;
+            }
+          }
+        }
+      }
       .btnsMobile{
         display: block;
+        margin-right: 20px;
         a{
-          color: #FFF;
+          color: var(--primaryColor);
           border: none;
           background: none;
           font-size: 26px;
@@ -129,7 +211,7 @@ header{
         }
       }
       &.light{
-        background: linear-gradient(180deg, #FFF 28.18%, #EEE 178.01%);
+        background: none;
         .btnsMobile{
           a{
             color: #000;
@@ -262,6 +344,14 @@ header{
           font-size: 26px;
       }
       }
+      &.search{
+        .container{
+            background: #FFF;
+            .navbar-brand{
+                background: var(--primaryColor) !important;
+            }
+        }
+      }
     } 
 
   }
@@ -304,8 +394,18 @@ header{
           padding: 160px 42px 20px;
           li {
             padding-bottom: 6px;
+            width: 100%;
             a {
               font-size: 16px;
+              
+            }
+            &.active{
+              &:before{
+                display: none;
+              }
+              a{
+                color: var(--secondaryColor);
+              }
             }
           }
         }

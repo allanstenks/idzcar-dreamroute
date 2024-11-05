@@ -88,27 +88,28 @@ function Banner() {
                         navigate(`/detalhe/${banner.link}`);
                         idzEvent("banners_clicados", banner.titulo);
                     }} className='imgBanner'>
-                        <span>{banner.veiculo.titulo}</span>
+                        <span>{banner.veiculo.marca}</span>
                         <img src={isMobile ? api.defaults.baseURL + banner.imagem_mobile : api.defaults.baseURL + banner.imagem_desktop}></img>
                     </div>
                     <div className="descBanner">
+                        
+                        <div className='inclusoPreco'>
+                            <ul className='ano'>
+                                <li><span>ANO</span>{banner.veiculo.ano}</li>
+                            </ul>
+                            <ul className='km'>
+                                <li><span>KM</span>{banner.veiculo.km}</li>
+                            </ul>
+                            <ul className='preco'>
+                                <li><span>Valor</span>{banner.veiculo.preco}</li>
+                            </ul>
+                        </div>
                         <div className='descVideo'>
                             {videos[0] !== "" && (
                                 <div className='video' onClick={() => openModal(firstVideoUrl)} style={{ background: `rgba(34, 34, 34, 1) url(${api.defaults.baseURL + banner.veiculo.imagem}) no-repeat center / cover` }}>
                                     <i></i>
                                 </div>
                             )}
-                        </div>
-                        <div className='inclusoPreco'>
-                            <ul className='ano'>
-                                <li>{banner.veiculo.ano}<span>ANO</span></li>
-                            </ul>
-                            <ul className='km'>
-                                <li>{banner.veiculo.km}<span>KM</span></li>
-                            </ul>
-                            <ul className='preco'>
-                                <li>{banner.veiculo.preco}<span>Valor</span></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -125,18 +126,7 @@ function Banner() {
                         <div className='saiba'><i><Icon icon="ic:baseline-plus" /></i><span>saiba mais</span></div>
                     </div>
                     <div className="descBanner">
-                        <div className='descVideo'>
-                            <div className='desc'>
-                                <h4>{banner.chamada}</h4>
-                                <h3>{banner.titulo}</h3>
-                            </div>
-                            {banner.campanha.videos && (
-                                <div className='video' onClick={() => openModal(banner.campanha.video)}>
-                                    <img className="video" src={video} />
-                                    <i><Icon icon="heroicons-outline:play" /></i>
-                                </div>
-                            )}
-                        </div>
+                        
                         <div className='inclusoPreco'>
                             <ul className='incluso'>
                                 {
@@ -152,6 +142,18 @@ function Banner() {
                                 <h3>{banner.campanha.preco_de != "R$ 0,00" ? banner.campanha.preco_de : "Sob Consulta"}</h3>
                             </div>
                             
+                        </div>
+                        <div className='descVideo'>
+                            <div className='desc'>
+                                <h4>{banner.chamada}</h4>
+                                <h3>{banner.titulo}</h3>
+                            </div>
+                            {banner.campanha.videos && (
+                                <div className='video' onClick={() => openModal(banner.campanha.video)}>
+                                    <img className="video" src={video} />
+                                    <i><Icon icon="heroicons-outline:play" /></i>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -176,18 +178,7 @@ function Banner() {
                         </div>
                     </div>
                     <div className="descBanner">
-                        <div className='descVideo'>
-                            <div className='desc'>
-                                <h4>{banner.chamada}</h4>
-                                <h3>{banner.texto_apoio}</h3>
-                            </div>
-                            {banner.campanha && banner.campanha.videos && (
-                                <div className='video' onClick={() => openModal(banner.campanha.video)}>
-                                    <img className="video" src={video} />
-                                    <i><Icon icon="heroicons-outline:play" /></i>
-                                </div>
-                            )}
-                        </div>
+                        
                         <div className='inclusoPreco'>
                             {banner.campanha && banner.campanha.listagem && (
                                 <ul className='incluso'>
@@ -201,7 +192,18 @@ function Banner() {
                             )}
                             { isMobile && <a href={banner.link} className='btn btn-secondary'>{banner.label_botao ? banner.label_botao : "Saiba Mais"}</a> }
                         </div>
-                        
+                        <div className='descVideo'>
+                            <div className='desc'>
+                                <h4>{banner.chamada}</h4>
+                                <h3>{banner.texto_apoio}</h3>
+                            </div>
+                            {banner.campanha && banner.campanha.videos && (
+                                <div className='video' onClick={() => openModal(banner.campanha.video)}>
+                                    <img className="video" src={video} />
+                                    <i><Icon icon="heroicons-outline:play" /></i>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             );

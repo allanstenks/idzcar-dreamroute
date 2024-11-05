@@ -9,7 +9,7 @@ import './Conheca.scss';
 import 'react-tooltip/dist/react-tooltip.css';
 
 // Imagens
-import imgSobre from "./img/imgSobre.webp";
+import imgSobre from "./img/imgSobre.png";
 
 function Conheca() {
     const navigate = useNavigate();
@@ -18,17 +18,18 @@ function Conheca() {
             <section className='Conheca'>
                 <Container>
                     <Row>
-                        <Col xs={12} sm={12} md={12} lg={6}>
-                            <div className='imgConheca'>
-                                <img src={imgSobre} />
+                        
+                        <Col xs={12} sm={12} md={12} lg={5}>
+                            <div className='textConheca'>
+                                <i></i>
+                                <h2>Sua Experiência Automotiva <strong>Inesquecível Começa Agora</strong></h2>
+                                <p>A Dream Route nasceu em 2015 como um evento exclusivo para amantes de supercarros, reunindo clientes e amigos da marca. Em 2023, ampliamos nossa atuação e lançamos uma nova fase com uma plataforma dedicada à venda de carros de luxo, oferecendo uma experiência única e completa para quem busca exclusividade e alta performance.</p>
+                                <a onClick={() => navigate(`/faleconosco`)} className="btn btn-primary">Entre em contato <Icon className="icons" icon="basil:arrow-up-outline" /></a>
                             </div>
                         </Col>
                         <Col xs={12} sm={12} md={12} lg={6}>
-                            <div className='textConheca'>
-                                <h3>conheça a 1021</h3>
-                                <h2>Sua Jornada Automotiva <strong>Começa Aqui</strong></h2>
-                                <p>Bem-vindo à 1021, um grupo automotivo formado por apaixonados por carros. Aqui, a nossa paixão se encontra com a excelência em atendimento, oferecendo uma consultoria individualizada aos nossos clientes. Na 1021 você encontra blindagens de alta performance, uma estética automotiva completa, loja de novos e seminovos e uma funilaria premium para atender à todas as suas necessidades quando o assunto é o seu carro.</p>
-                                <a onClick={() => navigate(`/faleconosco`)} className="btn btn-primary">entre em contato</a>
+                            <div className='imgConheca'>
+                                <img src={imgSobre} />
                             </div>
                         </Col>
                     </Row>

@@ -21,7 +21,11 @@ import FaleConosco from './pages/FaleConosco';
 import VendaSeuCarro from './pages/VendaSeuCarro';
 import Institucional from './pages/Institucional';
 import Page404 from './pages/Page404';
+import Importacao from './pages/Importacao';
+
 import Hotjar from '@hotjar/browser';
+
+
 
 // styles
 import './App.scss';
@@ -82,6 +86,7 @@ function AppRoutes() {
       <Route exact path="/vendaseucarro" element={<VendaSeuCarro />} />
       <Route exact path="/institucional" element={<Institucional />} />
       <Route exact path="/institucional/:url" element={<Institucional />} />
+      <Route exact path="/importacao/" element={<Importacao />} />
       <Route path="/*" element={<Page404 />} />
       {/* END NOT FOUND*/}
     </Routes>

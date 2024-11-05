@@ -53,7 +53,7 @@ function Galeria({ fotos }) {
                                 style={{
                                     width: '100%',
                                     maxWidth: 'none',
-                                    height: isMobile ? '300px' : '400px',
+                                    height: isMobile ? '300px' : '500px',
                                     objectFit: 'cover'
                                 }}
                             />

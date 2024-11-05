@@ -1,10 +1,10 @@
 // Experiência Personalizada
 
 .Video{
-    background:  url(./img/BgVideo.png) no-repeat left top;
-    padding: 40px 0 120px;
+    padding: 80px 0 120px;
     text-align: center;
     position: relative;
+    background: url(./img/BgVideo.png) no-repeat left top, linear-gradient(180deg, #ECECEC 17.71%, #CDCDCD 96.77%);
     h2{
         color: #000;
         font-size: 28px;

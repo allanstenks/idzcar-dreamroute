@@ -4,7 +4,7 @@
 :root {
   --primaryColor: #181818;
   --secondaryColor: #828282;
-  --tertiaryColor: #B8A558;
+  --tertiaryColor: #C2A220;
   --whiteColor: #FFFFFF;
   --callToActionColor: #181818;
 
@@ -31,7 +31,7 @@ body {
   &.btn-primary{
     background: none;
     color: var(--whiteColor);
-    border: 1px solid var(--whiteColor) !important;
+    border: 1px solid var(--whiteColor);
     border-radius: 100px !important;
     text-transform: inherit;
     font-weight: 400 !important;
@@ -157,7 +157,7 @@ body {
     background: var(--primaryColor);
     color: var(--whiteColor);
     padding: 14px 20px !important;
-    font-size: 20px !important;
+    font-size: 20px;
     &:hover{
       background: var(--tertiaryColor);
       color: var(--whiteColor);

@@ -56,6 +56,8 @@ function ResultadoBusca() {
         placeholderPreco
     } = useSearch()
 
+    console.log("searchData", searchData);
+
     const [activeButton, setActiveButton] = useState(
         listagem == 'todos' || listagem == 'blindados' || listagem == 'nao-blindados' ?
             listagem : 'todos'
@@ -116,6 +118,14 @@ function ResultadoBusca() {
 
     const handleToggleFiltros = () => {
         setMostrarFiltros(!mostrarFiltros);
+    };
+
+    const sortByKm = (data) => {
+        return [...data].sort((a, b) => {
+            if (a.km === "0") return 1;
+            if (b.km === "0") return -1;
+            return parseInt(a.km.replace('.', '')) - parseInt(b.km.replace('.', ''));
+        });
     };
 
 
@@ -276,15 +286,21 @@ function ResultadoBusca() {
                             <Row className='justify-content-md-center'>
 
                                 {
-                                    searchData?.map((carro, index) => (
+                                    sortByKm(searchData)?.map((carro, index) => (
                                         <Col key={index} xs={12} sm={12} md={12} lg={4}>
                                             <div className='veiculoBusca'>
-                                                <div className='foto' style={{ background: `url(https://hdream.idzcar.com.br/${carro.imagem})  no-repeat center / cover` }}>
-                                                    {carro.blindado == 1 && <span>Blindados </span>}
-                                                    {parseInt(carro.km.toString().replace('.', '')) < 10000 && (
+                                                <div className='foto' style={{ background: `url(https://hdream.idzcar.com.br/${carro.imagem}) no-repeat center / cover` }}>
+                                                    {carro.blindado == 1 && <span>Blindados</span>}
+                                                    {carro.km === "0" ? (
                                                         <span className='baixo'>
-                                                            <strong>BAIXA</strong> QUILOMETRAGEM
+                                                            <strong>ZERO</strong>
                                                         </span>
+                                                    ) : (
+                                                        parseInt(carro.km.toString().replace('.', '')) < 10000 && (
+                                                            <span className='baixo'>
+                                                                <strong>BAIXA</strong> QUILOMETRAGEM 
+                                                            </span>
+                                                        )
                                                     )}
                                                 </div>
                                                 <div className='desc'>

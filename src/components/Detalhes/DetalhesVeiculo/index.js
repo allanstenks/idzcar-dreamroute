@@ -121,17 +121,16 @@ function DetalhesVeiculo({ id, ano, km, blindagem, preco, imagem, detalhes, marc
                         </Col>
                         
                     </Row>
+                    {videos != "" &&
                     <Row className='justify-content-md-center'>
                         <Col xs={6} sm={12} md={12} lg={12}>
                             <h2>Veja mais <strong>detalhes</strong></h2>
                         </Col>
-                        <Col xs={6} sm={12} md={12} lg={8}>
-                            {videos != "" && (
-                                <div className="playVideos" onClick={() => openModal(videos)}>
-                                    <div className='play' style={{ background: `url(${api.defaults.baseURL}${imagem.imagem})  no-repeat center / cover` }}></div>
-                                    <p>ASSISTA AO VÍDEO</p>
-                                </div>
-                            )}
+                        <Col xs={6} sm={12} md={12} lg={som ? 8 : 12}>
+                            <div className="playVideos" onClick={() => openModal(videos)}>
+                                <div className='play' style={{ background: `url(${api.defaults.baseURL}${imagem.imagem})  no-repeat center / cover` }}></div>
+                                <p>ASSISTA AO VÍDEO</p>
+                            </div>
                         </Col>
                         <Col xs={12} sm={12} md={12} lg={4}>
                             <div className="playSom">
@@ -142,6 +141,7 @@ function DetalhesVeiculo({ id, ano, km, blindagem, preco, imagem, detalhes, marc
                             </div>
                         </Col>
                     </Row>
+                    }
                 </Container>
             </section>
             <VideoModal show={showModalVideo} handleClose={closeModal} videoId={videoId} />

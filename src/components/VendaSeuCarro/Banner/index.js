@@ -9,11 +9,11 @@ function BannerVendaSeuCarro() {
 
     return (
         <>
-            <section className='FaleConosco'>
+            <section className='BannerVendaSeuCarro'>
                 <Container>
                     <Row className='justify-content-md-center'>
-                        <Col xs={12} sm={12} md={12} lg={8} className='boxFaleConosco'>
-                            <div className='textFaleConosco'>
+                        <Col xs={12} sm={12} md={12} lg={8} className='boxBannerVendaSeuCarro'>
+                            <div className='textBannerVendaSeuCarro'>
                                 <h3>VENDA</h3>
                                 <h2>O SEU VEÍCULO</h2>
                                 <p>Tem interesse em vender o seu carro? Preencha os dados abaixo</p>
