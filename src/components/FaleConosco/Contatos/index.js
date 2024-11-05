@@ -40,7 +40,7 @@ function Contatos() {
                         </Col>
                         <Col xs={12} sm={6} md={12} lg={5} className='boxContatos'>
                             <div className='textContatos'>
-                                <h2>estamos prontos para <strong>te atender</strong></h2>
+                                <h2>Estamos prontos para <strong>atendê-lo</strong></h2>
                                 <h4>nosso endereço:</h4>
                                 <p>{data.endereco}, {data.endnum} - {data.bairro} - {data.cidade} - {data.estado} <br/> CEP: {data.cep}</p>
                                 <h4>horário de atendimento</h4>

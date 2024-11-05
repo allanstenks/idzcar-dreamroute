@@ -107,7 +107,7 @@ function Footer() {
                         <Col xs={12} sm={6} md={6} lg={4}>
                             <div className='locais'>
                                 <h3>Onde Estamos</h3>
-                                <p>Alameda dos Guátas, n° 729 <br />Saúde - São Paulo - SP <br /> CEP 04053-042</p>
+                                <p>Av. Ver. José Diniz 3707 - Loja<br />Campo Belo - São Paulo - SP <br /> CEP 04603-003</p>
                                 <ul>
                                     {data.instagram && <li><a href={data.instagram} target='_black'><Icon className="icons" icon="ri:instagram-fill" /></a></li>}
                                     {data.youtube && <li><a href={data.youtube} target='_black'><Icon className="icons" icon="mingcute:youtube-fill" /></a></li>}
