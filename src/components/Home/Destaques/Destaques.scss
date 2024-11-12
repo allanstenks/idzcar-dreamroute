@@ -137,6 +137,7 @@
                 h3{
                     color: var(--primaryColor);
                     font-size: 18px;
+                    line-height: 20px;
                     font-weight: bold;
                     text-transform: uppercase;
                     width: calc(100% - 50px);
@@ -149,13 +150,13 @@
                     }
                 }
                 .marca{
-                    width: 130px;
-                    height: 130px;
-                    filter: grayscale(100%);
-                    position: absolute;
-                    top: -80px;
-                    left: -14px;
-                    display: none;
+                    color: #969696;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 14px;
+                    text-transform: uppercase;
+                    margin-bottom: 2px;
                 }
             }
             .galeria{
@@ -362,6 +363,7 @@
                         font-size: 16px;
                     }
                 }
+
                 .valor{
                     h4{
                         font-size: 14px;

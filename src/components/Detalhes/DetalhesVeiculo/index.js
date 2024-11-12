@@ -76,6 +76,7 @@ function DetalhesVeiculo({ id, ano, km, blindagem, preco, imagem, detalhes, marc
                             <Row className='justify-content-md-center dados'>
                                 <Col xs={12} sm={12} md={12} lg={5}>
                                     <h4><img src={`${api.defaults.baseURL}${logomarca}`} alt="Logomarca" /></h4>
+                                    <h5>{detalhes && marca}</h5>
                                     <h3>{detalhes && detalhes.titulo} <span>{detalhes && detalhes.chamada}</span></h3>
                                     
                                 </Col>

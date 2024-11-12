@@ -304,10 +304,10 @@ function ResultadoBusca() {
                                                     )}
                                                 </div>
                                                 <div className='desc'>
-                                                    <h6>{carro.ano_modelo} / {carro.ano_fabricacao}</h6>
+                                                    <h4>{carro.marca}</h4>
                                                     {carro.status === "Vendido" ? <span className='Vendido'><Icon className="icons" icon="lets-icons:check-fill" /> Vendido</span> : ''}
-                                                    
                                                     <h3>{carro.modelo}</h3>
+                                                    <h6>{carro.ano_modelo} / {carro.ano_fabricacao}</h6>
                                                     <span>KM</span>
                                                     <h5>{carro.km}</h5>
                                                     <span>COMBUSTÍVEL</span>
