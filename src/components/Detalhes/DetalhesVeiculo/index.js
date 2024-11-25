@@ -12,7 +12,7 @@ import PropostaModal from '../PropostaModal';
 import VideoModal from '../../Home/VideoModal';
 
 
-function DetalhesVeiculo({ id, ano, km, blindagem, preco, imagem, detalhes, marca, idzEvent, navigation, videos, status, logomarca, som, imagembusca }) {
+function DetalhesVeiculo({ id, ano, km, blindagem, preco, imagem, detalhes, marca, idzEvent, navigation, videos, status, logomarca, som, imagembusca, videos_imagem, som_imagem }) {
     const [showModal, setShowModal] = useState(false);
     const [idVeiculo, setIdVeiculo] = useState(null);
     const [isPlaying, setIsPlaying] = useState(false); // Estado para controlar a reprodução do som
@@ -123,20 +123,20 @@ function DetalhesVeiculo({ id, ano, km, blindagem, preco, imagem, detalhes, marc
                         
                     </Row>
                     {videos != "" &&
-                    <Row className='justify-content-md-center'>
+                    <Row className='justify-content-md-center videosSom'>
                         <Col xs={6} sm={12} md={12} lg={12}>
                             <h2>Veja mais <strong>detalhes</strong></h2>
                         </Col>
                         <Col xs={6} sm={12} md={12} lg={som ? 8 : 12}>
                             <div className="playVideos" onClick={() => openModal(videos)}>
-                                <div className='play' style={{ background: `url(${api.defaults.baseURL}${imagem.imagem})  no-repeat center / cover` }}></div>
+                                <div className='play' style={{ background: `url(${api.defaults.baseURL}${videos_imagem})  no-repeat center / cover` }}></div>
                                 <p>ASSISTA AO VÍDEO</p>
                             </div>
                         </Col>
                         <Col xs={12} sm={12} md={12} lg={4}>
                             <div className="playSom">
                                 <h3>Escute o <strong>som do motor</strong></h3>
-                                <div className={`play ${isPlaying ? 'playing' : ''}`} onClick={togglePlaySound} style={{ background: `url(${api.defaults.baseURL}${imagembusca.imagem})  no-repeat center / cover` }}>
+                                <div className={`play ${isPlaying ? 'playing' : ''}`} onClick={togglePlaySound} style={{ background: `url(${api.defaults.baseURL}${som_imagem})  no-repeat center / cover` }}>
                                 </div>
                                 <audio ref={audioRef} src={som}></audio>
                             </div>

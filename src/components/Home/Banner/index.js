@@ -230,8 +230,8 @@ function Banner() {
         slidesToScroll: 1,
         fade: isMobile ? true : false,
         speed: 1000,
-        autoplay: false,
-        autoplaySpeed: 8000,
+        autoplay: true,
+        autoplaySpeed: 5000,
     };
 
     return (

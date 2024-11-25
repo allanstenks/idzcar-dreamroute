@@ -314,6 +314,9 @@
         
         
     }
+    .videosSom{
+        padding-bottom: 40px;
+    }
     .playSom{
         border: 2px solid #9e9c9c;
         background: rgba(35, 35, 35, 1);
@@ -380,20 +383,21 @@
             }
         }
         h3{
-            color: #FFF;
+            background: #373737;
+            color: #fff;
             font-size: 18px;
             font-style: normal;
             font-weight: 400;
+            letter-spacing: .36px;
             line-height: 42px;
-            letter-spacing: 0.36px;
-            text-transform: uppercase;
-            position: absolute;
-            top: -20px;
-            width: 100%;
-            text-align: center;
-            padding-left: 0;
-            background: #373737;
             padding-bottom: 20px;
+            padding-left: 0;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            top: 0;
+            width: 100%;
+            padding-top: 17px;
             z-index: 1;
         }
         &::before{

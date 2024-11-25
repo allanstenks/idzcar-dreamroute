@@ -58,7 +58,10 @@ function Header({ type }) {
                                             <Link to="/">Home</Link>
                                         </li>
                                         <li className={location.pathname === "/busca" ? "active" : ""}>
-                                            <Link to="/busca">Veículos</Link>
+                                            <a href="/busca">Veículos</a>
+                                        </li>
+                                        <li className={location.pathname === "/busca/todos/zero" ? "active" : ""}>
+                                            <a href="/busca/todos/zero">ZERO KM</a>
                                         </li>
                                         <li className={location.pathname === "/sobre" ? "active" : ""}>
                                             <Link to="/sobre">Sobre Nós</Link>

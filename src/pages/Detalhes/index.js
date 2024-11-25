@@ -113,6 +113,8 @@ function Detalhes() {
                             status={veiculo.status}
                             logomarca={veiculo.logomarca}
                             som={veiculo.som}
+                            som_imagem={veiculo.som_imagem}
+                            videos_imagem={veiculo.videos_imagem}
                         />
                         
                         <Especificacoes destaques={veiculo.destaques} detalhesEspecificacoes={veiculo.detalhes} opcionais={veiculo.opcionais} />
