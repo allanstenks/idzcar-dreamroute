@@ -97,7 +97,7 @@ function DetalhesVeiculo({ id, ano, km, blindagem, preco, imagem, detalhes, marc
                                                 {blindagem.tipo_vidro &&
                                                 <li>
                                                     <span>Tipo de Vidros</span>{blindagem.tipo_vidro} 
-                                                    {blindagem.garantia_vidro && <strong>(Garantia de {blindagem.garantia_vidro})</strong>}
+                                                   
                                                 </li>
                                                 }
                                             </>
