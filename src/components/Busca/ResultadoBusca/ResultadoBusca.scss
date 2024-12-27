@@ -291,9 +291,9 @@
                 border-radius: 6px;
             }
             span{
-                background: rgb(48,189,68);
-                background: linear-gradient(90deg, rgba(48, 189, 68, 0.55) -17.83%, rgba(29, 29, 29, 0.90) 130.07%);
-                border: 1px solid var(--tertiaryColor);
+                background: rgb(193, 161, 31);
+                background: linear-gradient(90deg, rgba(193, 161, 31, 0.8) -17.83%, rgba(136, 111, 12, 0.8) 130.07%);
+                border: 1px solid var(--tertiaryColor); 
                 color: var(--whiteColor);
                 font-weight: 600;
                 top: 20px;
@@ -324,8 +324,8 @@
             position: relative;
             padding: 30px;
             span.Vendido{
-                border: 0.845px #2CBC46;
-                background: rgba(48, 189, 68, 1); 
+                border: 0.845px rgb(193, 161, 31);
+                background: rgba(193, 161, 31, 1); 
                 color: #FFF;
                 font-size: 12px;
                 font-style: normal;
@@ -351,7 +351,7 @@
                     height: 0; 
                     border-left: 9px solid transparent;
                     border-right: 9px solid transparent;
-                    border-bottom: 9px solid rgba(48, 189, 68, 1);
+                    border-bottom: 9px solid rgba(193, 161, 31, 1);
                     position: absolute;
                     bottom: -7px;
                     left: 0.5px;
