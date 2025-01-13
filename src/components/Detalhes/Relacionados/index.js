@@ -81,7 +81,7 @@ function Relacionados({idVeiculo}) {
                                 <Slider {...settings} ref={slider => {sliderRef = slider;}}>
                                     {relacionados.map((relacionado,index) => (
                                         <div className='itemVeiculos' key={index}>
-                                           <div className='foto' style={{ background: `url(https://hdream.idzcar.com.br/${relacionado.imagem})  no-repeat center / cover` }}>
+                                           <div className='foto' style={{ background: `url(https://api.dreamroute.com.br/${relacionado.imagem})  no-repeat center / cover` }}>
                                                     {relacionado.blindado == 1 && <span>Blindados </span>}
                                                 </div>
                                                 <div className='desc'>

@@ -289,7 +289,7 @@ function ResultadoBusca() {
                                     sortByKm(searchData)?.map((carro, index) => (
                                         <Col key={index} xs={12} sm={12} md={12} lg={4}>
                                             <div className='veiculoBusca'>
-                                                <div className='foto' style={{ background: `url(https://hdream.idzcar.com.br/${carro.imagem}) no-repeat center / cover` }}>
+                                                <div className='foto' style={{ background: `url(https://api.dreamroute.com.br/${carro.imagem}) no-repeat center / cover` }}>
                                                     {carro.blindado == 1 && <span>Blindados</span>}
                                                     {carro.km === "0" ? (
                                                         <span className='baixo'>
