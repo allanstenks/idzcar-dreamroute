@@ -60,7 +60,7 @@ function Marcas() {
                                 <Slider {...settings} ref={slider => {sliderRef = slider;}}>
                                     {marcas.map(marca => (
                                         <div className='itemMarcas'>
-                                            <img src={`https://api.dreamroute.com.br${marca.logo}`} alt=""  />
+                                            <img src={`https://hdream.idzcar.com.br${marca.logo}`} alt=""  />
                                         </div>
                                     ))}
                                 </Slider>
