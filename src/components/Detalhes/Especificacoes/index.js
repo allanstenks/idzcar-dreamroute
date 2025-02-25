@@ -47,14 +47,14 @@ const Especificacoes = ({  opcionais = [], destaques, detalhesEspecificacoes = [
                     <p>{detalhesEspecificacoes.descricao}</p>
                 </div>
             </Col>
-            {(opcionais.length > 0 || (Array.isArray(destaques) && destaques.length > 0)) ? (
+            {opcionais.length > 0 || (Array.isArray(destaques) && destaques.length > 0) ? (
                 <Col xs={12} sm={12} md={12} lg={6} className='color segundo'>
                     <div className='boxColor'>
                         <h2>Diferenciais</h2>
                         {mostrarOpcionais && (
                             <ul>
                                 {opcionais.map((item, index) => (
-                                    <li key={index}><span>{item}</span></li>
+                                    <li key={index}><span>{item.opcional}</span></li>
                                 ))}
                                 {Array.isArray(destaques) && destaques.map((item, index) => (
                                     <li key={index}><span>{item}</span></li>
@@ -64,6 +64,7 @@ const Especificacoes = ({  opcionais = [], destaques, detalhesEspecificacoes = [
                     </div>
                 </Col>
             ) : null}
+
         </Row>
     </Container>
 </section>
