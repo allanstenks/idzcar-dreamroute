@@ -100,6 +100,7 @@ function Detalhes() {
                         <DetalhesVeiculo
                             id={veiculo.id}
                             marca={veiculo.marca}
+                            versao={veiculo.versao}
                             ano={veiculo.ano_fabricacao}
                             km={veiculo.km}
                             blindagem={veiculo.blindagem}
