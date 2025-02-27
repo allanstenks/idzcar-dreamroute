@@ -109,7 +109,11 @@ function Destaques() {
                                                                     <div className='modelo'>
                                                                         <h4 className='marca'>{destaque.marca}</h4>
                                                                         <h3>
-                                                                            {destaque.titulo}
+                                                                            {destaque.modelo}
+    
+                                                                        </h3>
+                                                                        <h4 className='marca'>{destaque.versao}</h4>
+                                                                        <h3>
                                                                             <span> {destaque.ano_modelo} / {destaque.ano_fabricacao}</span>
                                                                         </h3>
                                                                     </div>
