@@ -64,7 +64,7 @@ function Header({ type }) {
                                             <a href="/busca/blindados/todos">Blindados</a>
                                         </li>
                                         <li className={location.pathname === "/busca/todos/zero" ? "active" : ""}>
-                                            <a href="/busca/todos/zero">ZERO KM</a>
+                                            <a href="https://eventos.dreamroute.com.br/" target='_blank'>Eventos</a>
                                         </li>
                                         <li className={location.pathname === "/sobre" ? "active" : ""}>
                                             <Link to="/sobre">Sobre Nós</Link>
