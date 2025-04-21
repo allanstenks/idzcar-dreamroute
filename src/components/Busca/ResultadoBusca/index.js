@@ -56,8 +56,6 @@ function ResultadoBusca() {
         placeholderPreco
     } = useSearch()
 
-    console.log("searchData", searchData);
-
     const [activeButton, setActiveButton] = useState(
         listagem == 'todos' || listagem == 'blindados' || listagem == 'nao-blindados' ?
             listagem : 'todos'
@@ -286,7 +284,14 @@ function ResultadoBusca() {
                             <Row className='justify-content-md-center'>
 
                                 {
-                                    sortByKm(searchData)?.map((carro, index) => (
+                                    [...sortByKm(searchData)].sort((a, b) => {
+                                        const statusA = (a.status || a.situacao || '').toLowerCase().trim();
+                                        const statusB = (b.status || b.situacao || '').toLowerCase().trim();
+                                      
+                                        if (statusA === 'vendido' && statusB !== 'vendido') return 1;
+                                        if (statusA !== 'vendido' && statusB === 'vendido') return -1;
+                                        return 0;
+                                      }).map((carro, index) => (
                                         <Col key={index} xs={12} sm={12} md={12} lg={4}>
                                             <div className='veiculoBusca'>
                                                 <div className='foto' style={{ background: `url(https://hdream.idzcar.com.br/${carro.imagem}) no-repeat center / cover` }}>

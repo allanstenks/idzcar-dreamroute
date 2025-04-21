@@ -379,6 +379,7 @@ export const SearchProvider = ({ children }) => {
                 } else {
 
                     await api.get(`/api/veiculos?origem=site${labelMarca}${labelModelo}${labelListagem}${labelCondicao}${objFaixa["preco-de"] ? `&preco-de=${objFaixa["preco-de"]}` : ""}${objFaixa["preco-ate"] ? `&preco-ate=${objFaixa["preco-ate"]}` : ""}`).then((res) => {
+                  
                         if (res.data) {
                             let params = new URLSearchParams(window.location.search)
                             let precoDe = ''
