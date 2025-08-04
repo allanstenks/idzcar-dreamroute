@@ -7,6 +7,7 @@ import { useNavigate  } from 'react-router-dom';
 import Header from "../../components/Header";
 import Footer from "../../components/Home/Footer";
 import Menu from "../../components/Home/Menu";
+import ListaImportados from "../../components/Importacao/ListaImportados";
 
 // Styles
 import './Importacao.scss';
@@ -30,18 +31,23 @@ function Importacao() {
         <>
             <Menu />
             <Header />
-            <section className='Importacao'>
-                <Container>
-                    <Row className='justify-content-md-center'>
-                        <Col xs={12} sm={6} md={6} lg={6}>
-                            <h3>Estamos construindo</h3>
-                            <h4>algo incrível</h4>
-                            <p><strong>Essa página ainda não existe,</strong> mas em breve, sua jornada para o carro dos sonhos será global</p>
-                            <a onClick={() => navigate(`/faleconosco`)} className="btn btn-primary">Seja o primeiro a saber <Icon className="icons" icon="basil:arrow-up-outline" /></a>
-                        </Col>
-                    </Row>
-                </Container>
+           <section className='Importacao'>
+            <Container>
+                <Row className='justify-content-md-center text-center'>
+                <Col xs={12} md={10} lg={8}>
+                    <h3>Confira os modelos importados disponíveis</h3>
+                    <p className="lead">
+                    Trabalhamos com veículos de alto padrão prontos para você.  
+                    E se não encontrar o que procura, fale com nossa equipe – nós buscamos pra você.
+                    </p>
+                    <a onClick={() => navigate(`/faleconosco`)} className="btn btn-primary mt-3">
+                    Quero um modelo sob medida <Icon className="icons" icon="basil:arrow-up-outline" />
+                    </a>
+                </Col>
+                </Row>
+            </Container>
             </section>
+            <ListaImportados />
             <Footer />
         </>
 
