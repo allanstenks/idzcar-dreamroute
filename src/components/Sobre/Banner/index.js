@@ -67,7 +67,7 @@ function SobreBanner() {
                                 <Slider {...settings} ref={slider => {sliderRef = slider;}}>
                                     {marcas.map(marca => (
                                         <div className='itemMarcas'>
-                                            <img src={`https://hdream.idzcar.com.br${marca.logo}`} alt=""  />
+                                            <img src={`${api.defaults.baseURL}${marca.logo}`} alt=""  />
                                         </div>
                                     ))}
                                 </Slider>
